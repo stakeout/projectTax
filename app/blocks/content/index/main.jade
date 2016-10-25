@@ -1,0 +1,16 @@
+include /blocks/direction/direction
+include /blocks/advantages/advantages
+include /blocks/about/about
+include /blocks/tariffs/tariffs
+include /blocks/services/services
+include /blocks/reviews/reviews
+
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+direction
+			+advantages
+			+about
+			+tariffs
+			+services
+			+reviews

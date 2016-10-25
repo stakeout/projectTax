@@ -1,4 +1,16 @@
 include /blocks/top-menu/top-menu
+include /blocks/logo/logo
+include /blocks/order-form/order-form
 mixin header()
-	+b.header&attributes(attributes)
-		+top-menu
+	+b.HEADER.page-header&attributes(attributes)
+		+e.top-row
+			.container
+				+logo
+				+top-menu
+		+e.bottom-row
+			.container
+				+order-form
+				+e.SECTION.content
+					+e.H1.title.heading.heading_h1 Выбирайте только лучшее
+					+e.A.call-back.link(href='') Обратный звонок
+					+e.car-container

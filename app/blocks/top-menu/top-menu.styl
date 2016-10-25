@@ -1,2 +1,24 @@
 .top-menu
-	display block
+	position relative
+	display -webkit-flex
+	display -ms-flex
+	display flex
+	align-items center
+	min-height: 80px
+	background-color $c_white
+	&__list
+		display -webkit-flex
+		display -ms-flex
+		display flex
+	&__sub-list
+		display none
+	&__item
+		&:not(:last-child)
+			margin-right 25px
+	&__link
+		display block
+		color $c_black
+		font-family $base-font2
+		font-size 22px
+		font-weight 400
+		line-height 80px

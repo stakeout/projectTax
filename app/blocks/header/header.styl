@@ -1,2 +1,18 @@
-.header
-	display block
+.page-header
+	min-height 750px
+	background url(../images/header-bg.png) no-repeat 50% bottom
+	&__top-row
+		background-color $c_white
+		.container
+			display -webkit-flex
+			display -ms-flex
+			display flex
+	&__bottom-row
+		.container
+			display -webkit-flex
+			display -ms-flex
+			display flex
+			justify-content: space-between;
+	&__car-container
+		min-height 245px
+		background url(../images/car-bg.png) no-repeat right bottom

@@ -1,0 +1,9 @@
+mixin callback-form()
+	+b.callback-form&attributes(attributes)
+		+e.P.title Остались вопросы?
+			br
+			| Мы вам перезвоним
+		+e.FORM.form(action='' method='' id='callback')
+			+e.INPUT.form-input._name(type='text' name='name' id='name' placeholder='Ваше имя')
+			+e.INPUT.form-input._phone(type='tel' name='phone' id='phone' placeholder='Ваш телефон')
+			+e.BUTTON.submit(type='submit') Перезвоните мне
