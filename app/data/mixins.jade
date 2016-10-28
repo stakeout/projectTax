@@ -1,3 +1,8 @@
+mixin icon(iconName,width,height)
+	+e.SVG(class='icon icon_' + iconName width= width + 'px'  height= height + 'px' role='img')
+			use(xlink:href='assets/images/svg/icon.svg#icon_#{iconName}')
+			
+//======================================//
 mixin capitalize(string)
 	= string.charAt ( 0 ).toUpperCase () + string.slice ( 1 )
 

@@ -1,2 +1,26 @@
 .advantages
-	display block
+	margin-bottom 80px
+	&__title
+		margin-bottom 80px
+		text-align center
+	&__list
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		justify-content: space-around
+	&__item
+		position relative
+		width 155px
+		padding-top 75px
+		color $c_black
+		font-family $base-font
+		font-size 19px
+		text-align center
+		&:first-child
+			padding-top 85px
+	.icon
+		position absolute
+		top 10px
+		left calc(50% - 21px)
+		&_sms-message
+			left calc(50% - 15px)

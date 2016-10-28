@@ -1,2 +1,22 @@
 .services
-	display block
+	margin-bottom 80px
+	&__title
+		margin-bottom 80px
+		text-align center
+	&__list
+		display -webkit-flex
+		display -ms-flex
+		display flex
+	&__item
+		position relative
+		width 155px
+		padding-top 75px
+		text-align center
+	&__link
+		color $c_black
+		font-family $base-font
+		font-size 19px
+	.icon
+		position absolute
+		top 10px
+		left calc(50% - 21px)

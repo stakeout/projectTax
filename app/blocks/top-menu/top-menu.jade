@@ -1,21 +1,10 @@
+include /blocks/sub-menu/sub-menu
 mixin top-menu(items)
 	+b.NAV.top-menu&attributes(attributes)
 		+e.UL.list.container
-			+e.LI.item
+			+e.LI.item._tariff
 				+e.A.link.link(href='') Тарифы
-				+e.UL.sub-list
-					li
-						a.link(href='') Эконом
-					li
-						a.link(href='') Комфорт
-					li
-						a.link(href='') Бизнес
-					li
-						a.link(href='') Универсал
-					li
-						a.link(href='') Минивен
-					li
-						a.link(href='') Микроавтобус
+				+sub-menu
 			+e.LI.item
 				+e.A.link.link(href='') Такси в аэропорт
 			+e.LI.item

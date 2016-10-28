@@ -15,6 +15,12 @@
 	&__item
 		&:not(:last-child)
 			margin-right 25px
+		&_tariff
+			position relative
+			&:hover .sub-menu
+				left -20px
+				opacity 1
+				transition opacity .4s ease
 	&__link
 		display block
 		color $c_black
@@ -22,3 +28,5 @@
 		font-size 22px
 		font-weight 400
 		line-height 80px
+		&:hover
+			color $c_yellow
