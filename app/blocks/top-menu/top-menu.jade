@@ -1,17 +1,21 @@
 include /blocks/sub-menu/sub-menu
 mixin top-menu(items)
 	+b.NAV.top-menu&attributes(attributes)
-		+e.UL.list.container
+		+e.UL.list
 			+e.LI.item._tariff
 				+e.A.link.link(href='') Тарифы
-				+sub-menu
+				+sub-menu(['Эконом', 'Комфорт', 'Универсал', 'Бизнес', 'Минивен', 'Микроавтобус'], ['index.html', 'about.html'])
 			+e.LI.item
 				+e.A.link.link(href='') Такси в аэропорт
+				+sub-menu(['Внуково', 'Домодедово', 'Шереметьево'])
 			+e.LI.item
 				+e.A.link.link(href='') Такси на вокзал
+				+sub-menu(['Белорусский', 'Казанский', 'Киевский', 'Курский', 'Ленинградский', 'Павелецкий', 'Рижский', 'Савеловский', 'Ярославский'])
 			+e.LI.item
 				+e.A.link.link(href='') Такси по округам
+				+sub-menu(['САО', 'СВАО', 'ВАО', 'ЮВАО', 'ЮАО', 'ЮЗАО', 'ЗАО', 'СЗАО', 'ЦАО'])
 			+e.LI.item
 				+e.A.link.link(href='') Такси межгород
 			+e.LI.item
 				+e.A.link.link(href='') Услуги
+				+sub-menu(['Женское такси', 'Перевозка велосипеда', 'Экскурсия на такси', 'Перевозка животных', 'Закончился бензин', 'Аренда на сутки', 'Желтые номера', 'Трансфер'])

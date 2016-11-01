@@ -1,14 +1,5 @@
-mixin sub-menu()
+mixin sub-menu(items)
 	+b.UL.sub-menu&attributes(attributes)
-		+e.LI.item
-			+e.A.link.link(href='') Эконом
-		+e.LI.item
-			+e.A.link.link(href='') Комфорт
-		+e.LI.item
-			+e.A.link.link(href='') Бизнес
-		+e.LI.item
-			+e.A.link.link(href='') Универсал
-		+e.LI.item
-			+e.A.link.link(href='') Минивен
-		+e.LI.item
-			+e.A.link.link(href='') Микроавтобус
+		each item in items
+			+e.LI.item
+				+e.A.link.link(href='')= item

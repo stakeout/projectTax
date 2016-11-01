@@ -1,11 +1,4 @@
 .top-menu
-	position relative
-	display -webkit-flex
-	display -ms-flex
-	display flex
-	align-items center
-	min-height: 80px
-	background-color $c_white
 	&__list
 		display -webkit-flex
 		display -ms-flex
@@ -13,14 +6,13 @@
 	&__sub-list
 		display none
 	&__item
+		position relative
+		&:hover .sub-menu
+			left -20px
+			opacity 1
+			transition opacity .4s ease
 		&:not(:last-child)
 			margin-right 25px
-		&_tariff
-			position relative
-			&:hover .sub-menu
-				left -20px
-				opacity 1
-				transition opacity .4s ease
 	&__link
 		display block
 		color $c_black
