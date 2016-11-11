@@ -1,0 +1,18 @@
+include /blocks/tariffs/tariffs
+include /blocks/common-services/common-services
+
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+tariffs('Тарифы')
+			+common-services
+			+b.SECTION.about-tariffs
+				+e.H3.title.heading._h3 Такси с фиксированным тарифом
+				+e.P.text
+					+lorem(150)
+				+e.P.text
+					+lorem(150)
+				+e.P.text
+					+lorem(150)
+				+e.P.text
+					+lorem(150)

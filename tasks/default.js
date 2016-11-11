@@ -10,7 +10,7 @@ gulp.task('styles:dependencies', () => (
 ));
 
 gulp.task('default', () => (
-	runSequence('images',
+	runSequence(
 		[
 			'styles:dependencies',
 			'templates'

@@ -1,0 +1,14 @@
+mixin tariff-info(obj)
+	+b.SECTION.tariff-info&attributes(attributes)
+		+e.H2.title.heading._h2.taxi-icon #{obj.title}
+		+e.UL.list
+			+e.LI.item Минимальная цена
+				+icon('piggy-bank', 42,41)
+				+e.value #{obj.price} 
+					span.ruble-icon
+			+e.LI.item Минимальная поездка
+				+icon('transport', 42,41)
+				+e.value #{obj.time} мин
+			+e.LI.item Далее
+				+icon('speedometer', 42,41)
+				+e.value #{obj.more}

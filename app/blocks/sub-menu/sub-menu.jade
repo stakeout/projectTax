@@ -1,5 +1,5 @@
 mixin sub-menu(items)
 	+b.UL.sub-menu&attributes(attributes)
-		each item in items
+		each key, value in items
 			+e.LI.item
-				+e.A.link.link(href='')= item
+				+e.A.link.link(href= key)= value

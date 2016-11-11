@@ -1,0 +1,32 @@
+include /blocks/common-services/common-services
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+b.SECTION.about-stations
+				+e.H2.title.heading._h2.taxi-icon Такси на вокзал
+				p
+					+lorem(150)
+				+e.UL.list
+					+e.LI.item#yaroslavl Такси на Ярославский вокзал
+					+e.LI.item#leningrad Такси на Ленинградский вокзал
+					+e.LI.item#kazan Такси на Казанский вокзал
+					+e.LI.item#kursk Такси на Курский вокзал
+					+e.LI.item#poveleck Такси на Павелецкий вокзал
+					+e.LI.item#kiev Киевский вокзал
+					+e.LI.item#belarus Белорусский вокзал
+					+e.LI.item#savelovski Такси на Савеловский вокзал
+					+e.LI.item#riga Такси на Рижский вокзал
+				+common-services
+				+b.SECTION.stations-transfers
+					+e.H3.title.heading._h3 Такси до железнодорожного вокзала
+					+e.P.text
+						+lorem(150)
+					+e.A.order-taxi.link(href='') Заказать
+					+e.H3.title.heading._h3 Трансфер аэропорт-вокзал
+					+e.P.text
+						+lorem(150)
+					+e.A.order-taxi.link(href='') Заказать
+					+e.H3.title.heading._h3 Такси в аэропорт дешево
+					+e.P.text
+						+lorem(150)
+					+e.A.order-taxi.link(href='') Заказать

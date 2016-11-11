@@ -1,0 +1,31 @@
+include /blocks/common-services/common-services
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+b.SECTION.airport-taxi
+				+e.H2.title.heading.heading._h2 Такси в аэропорт
+				+e.P.text
+					+lorem(100)
+				+e.UL.list
+					+e.LI.item
+						+e.A.link.link._vnukovo#js-vnukovo(href='') Такси в аэропорт Внуково
+					+e.LI.item
+						+e.A.link.link._domodedovo#js-domodedovo(href='') Такси в аэропорт Домодедово
+					+e.LI.item
+						+e.A.link.link._sheremetevo#js-sheremetevo(href='') Такси в аэропорт Шереметьево
+			+common-services
+			+b.SECTION.airport-transfers
+				+e.H3.title.heading._h3 Трансфер в аэропорт
+				+e.P.text
+					+lorem(150)
+				+e.A.order-taxi.link(href='') Заказать
+				+e.H3.title.heading._h3 Трансфер аэропорт-вокзал
+				+e.P.text
+					+lorem(150)
+				+e.A.order-taxi.link(href='') Заказать
+				+e.H3.title.heading._h3 Такси в аэропорт дешево
+				+e.P.text
+					+lorem(150)
+				+e.A.order-taxi.link(href='') Заказать
+				
+				

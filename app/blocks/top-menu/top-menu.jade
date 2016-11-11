@@ -2,20 +2,55 @@ include /blocks/sub-menu/sub-menu
 mixin top-menu(items)
 	+b.NAV.top-menu&attributes(attributes)
 		+e.UL.list
-			+e.LI.item._tariff
-				+e.A.link.link(href='') Тарифы
-				+sub-menu(['Эконом', 'Комфорт', 'Универсал', 'Бизнес', 'Минивен', 'Микроавтобус'], ['index.html', 'about.html'])
 			+e.LI.item
-				+e.A.link.link(href='') Такси в аэропорт
-				+sub-menu(['Внуково', 'Домодедово', 'Шереметьево'])
+				+e.A.link.link(href='tariffs.html') Тарифы
+				+sub-menu({'Эконом':'tariff-econom.html',
+									'Комфорт':'komfort.html',
+									'Универсал':'universal.html',
+									'Бизнес':'biznes.html',
+									'Минивен':'miniven.html',
+									'Микроавтобус':'micro.html'
+									})
 			+e.LI.item
-				+e.A.link.link(href='') Такси на вокзал
-				+sub-menu(['Белорусский', 'Казанский', 'Киевский', 'Курский', 'Ленинградский', 'Павелецкий', 'Рижский', 'Савеловский', 'Ярославский'])
+				+e.A.link.link(href='airport.html') Такси в аэропорт
+				+sub-menu({'Внуково':'ekonom.html',
+									'Домодедово':'komfort.html',
+									'Шереметьево':'universal.html'
+									})
+			+e.LI.item
+				+e.A.link.link(href='stations.html') Такси на вокзал
+				+sub-menu({'Белорусский':'ekonom.html',
+									'Казанский':'komfort.html',
+									'Киевский ':'universal.html',
+									'Курский':'biznes.html',
+									'Ленинградский':'miniven.html',
+									'Павелецкий':'micro.html',
+									'Рижский':'address.html',
+									'Савеловский':'address.html',
+									'Ярославский':'address.html'
+									})
 			+e.LI.item
 				+e.A.link.link(href='') Такси по округам
-				+sub-menu(['САО', 'СВАО', 'ВАО', 'ЮВАО', 'ЮАО', 'ЮЗАО', 'ЗАО', 'СЗАО', 'ЦАО'])
+				+sub-menu({'САО':'ekonom.html',
+									'СВАО':'komfort.html',
+									'ВАО ':'universal.html',
+									'ЮВАО':'biznes.html',
+									'ЮАО':'miniven.html',
+									'ЮЗАО':'micro.html',
+									'ЗАО':'address.html',
+									'СЗАО':'address.html',
+									'ЦАО':'address.html'
+									})
 			+e.LI.item
 				+e.A.link.link(href='') Такси межгород
 			+e.LI.item
 				+e.A.link.link(href='') Услуги
-				+sub-menu(['Женское такси', 'Перевозка велосипеда', 'Экскурсия на такси', 'Перевозка животных', 'Закончился бензин', 'Аренда на сутки', 'Желтые номера', 'Трансфер'])
+				+sub-menu({'Женское такси':'address.html',
+									'Перевозка велосипеда':'address.html',
+									'Экскурсия на такси':'address.html',
+									'Перевозка животных':'address.html',
+									'Закончился бензин':'address.html',
+									'Аренда на сутки':'address.html',
+									'Желтые номера':'address.html',
+									'Трансфер':'address.html'
+									})
