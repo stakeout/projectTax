@@ -5,10 +5,11 @@ mixin tariff-info(obj)
 			+e.LI.item Минимальная цена
 				+icon('piggy-bank', 42,41)
 				+e.value #{obj.price} 
-					span.ruble-icon
+					span &#8381
 			+e.LI.item Минимальная поездка
 				+icon('transport', 42,41)
 				+e.value #{obj.time} мин
 			+e.LI.item Далее
 				+icon('speedometer', 42,41)
 				+e.value #{obj.more}
+					span &#8381/минута

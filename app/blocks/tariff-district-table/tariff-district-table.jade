@@ -1,0 +1,53 @@
+mixin tariff-district-table(obj)
+	+b.TABLE.tariff-district-table&attributes(attributes)
+		caption Тарифы на такси #{obj.tariffName} в аэропорт из Москвы
+		tr
+			th
+			th Домодедово
+			th Шереметьево
+			th Внуково
+		tr
+			td.district-name #{obj.distr[0]}
+			td #{obj.priceDomodedovo[0]}
+			td #{obj.priceSheremetevo[0]}
+			td #{obj.priceVnukovo[0]}
+		tr
+			td.district-name #{obj.distr[1]}
+			td #{obj.priceDomodedovo[1]}
+			td #{obj.priceSheremetevo[1]}
+			td #{obj.priceVnukovo[1]}
+		tr
+			td.district-name #{obj.distr[2]}
+			td #{obj.priceDomodedovo[2]}
+			td #{obj.priceSheremetevo[2]}
+			td #{obj.priceVnukovo[2]}
+		tr
+			td.district-name #{obj.distr[3]}
+			td #{obj.priceDomodedovo[3]}
+			td #{obj.priceSheremetevo[3]}
+			td #{obj.priceVnukovo[3]}
+		tr
+			td.district-name #{obj.distr[4]}
+			td #{obj.priceDomodedovo[4]}
+			td #{obj.priceSheremetevo[4]}
+			td #{obj.priceVnukovo[4]}
+		tr
+			td.district-name #{obj.distr[5]}
+			td #{obj.priceDomodedovo[5]}
+			td #{obj.priceSheremetevo[5]}
+			td #{obj.priceVnukovo[5]}
+		tr
+			td.district-name #{obj.distr[6]}
+			td #{obj.priceDomodedovo[6]}
+			td #{obj.priceSheremetevo[6]}
+			td #{obj.priceVnukovo[6]}
+		tr
+			td.district-name #{obj.distr[7]}
+			td #{obj.priceDomodedovo[7]}
+			td #{obj.priceSheremetevo[7]}
+			td #{obj.priceVnukovo[7]}
+		tr
+			td.district-name #{obj.distr[8]}
+			td #{obj.priceDomodedovo[8]}
+			td #{obj.priceSheremetevo[8]}
+			td #{obj.priceVnukovo[8]}

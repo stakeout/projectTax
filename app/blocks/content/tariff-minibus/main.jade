@@ -1,0 +1,18 @@
+include /blocks/common-services/common-services
+include /blocks/tariff-info/tariff-info
+include /blocks/tariff-district-table/tariff-district-table
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+tariff-info({title:'тариф Микроавтобус',
+										price:4000,
+										time:20,
+										more:40
+										})
+			+tariff-district-table({distr:['сао','свао','вао','ювао','юао','юзао','зао','сзао','цао'],
+															priceDomodedovo:['4600','4600','4600','4600','4500','4600','4600','4700','4600'],
+															priceSheremetevo:['4500','4500','4600','4600','4600','4600','4600','4500','4600'],
+															priceVnukovo:['4600','4700','4700','4600','4600','4500','4500','4600','4600'],
+															tariffName:'Микроавтобус'
+															})
+			+common-services

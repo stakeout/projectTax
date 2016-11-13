@@ -1,0 +1,18 @@
+include /blocks/common-services/common-services
+include /blocks/tariff-info/tariff-info
+include /blocks/tariff-district-table/tariff-district-table
+mixin main()
+	+b.MAIN.page-content
+		+e.inner.container
+			+tariff-info({title:'тариф Комфорт',
+										price:450,
+										time:20,
+										more:28
+										})
+			+tariff-district-table({distr:['сао','свао','вао','ювао','юао','юзао','зао','сзао','цао'],
+															priceDomodedovo:['1100','1100','1100','1100','1000','1100','1100','1100','1100'],
+															priceSheremetevo:['1000','1000','1100','1200','1200','1200','1100','1000','1100'],
+															priceVnukovo:['1100','1100','1100','1100','1100','1000','1000','1100','1100'],
+															tariffName:'Комфорт'
+															})
+			+common-services

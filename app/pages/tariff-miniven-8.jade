@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/tariff-miniven-8/main
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Тариф Минивэн (8 мест)';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer

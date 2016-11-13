@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/tariff-miniven-6/main
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Тариф Минивэн (6 мест)';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer
