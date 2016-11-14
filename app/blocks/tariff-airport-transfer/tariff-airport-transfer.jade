@@ -1,0 +1,23 @@
+mixin tariff-airport-transfer(obj)
+	+b.TABLE.tariff-airport-transfer&attributes(attributes)
+		caption #{obj.caption}
+		tr
+			th
+			th Домодедово
+			th Шереметьево
+			th Внуково
+		tr
+			td.district-name #{obj.distr[0]}
+			td #{obj.priceDomodedovo[0]}
+			td #{obj.priceSheremetevo[0]}
+			td #{obj.priceVnukovo[0]}
+		tr
+			td.district-name #{obj.distr[1]}
+			td #{obj.priceDomodedovo[1]}
+			td #{obj.priceSheremetevo[1]}
+			td #{obj.priceVnukovo[1]}
+		tr
+			td.district-name #{obj.distr[2]}
+			td #{obj.priceDomodedovo[2]}
+			td #{obj.priceSheremetevo[2]}
+			td #{obj.priceVnukovo[2]}

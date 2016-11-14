@@ -1,0 +1,13 @@
+mixin tariff-airport-station(obj)
+	+b.TABLE.tariff-airport-station&attributes(attributes)
+		caption #{obj.caption}
+		tr
+			th
+			th Домодедово
+			th Шереметьево
+			th Внуково
+		tr
+			td.district-name #{obj.distr}
+			td #{obj.priceDomodedovo}
+			td #{obj.priceSheremetevo}
+			td #{obj.priceVnukovo}

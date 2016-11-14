@@ -1,18 +1,32 @@
 include /blocks/common-services/common-services
 include /blocks/tariff-info/tariff-info
 include /blocks/tariff-district-table/tariff-district-table
+include /blocks/tariff-airport-transfer/tariff-airport-transfer
+include /blocks/tariff-airport-station/tariff-airport-station
 mixin main()
 	+b.MAIN.page-content
 		+e.inner.container
-			+tariff-info({title:'тариф Минивэн (8 мест)',
-										price:400,
-										time:20,
-										more:26
+			+tariff-info({title:'Такси Минивэн (8 мест)',
+										price:950,
+										time:8,
+										more:34
 										})
 			+tariff-district-table({distr:['сао','свао','вао','ювао','юао','юзао','зао','сзао','цао'],
-															priceDomodedovo:['1100','1100','1100','1100','1000','1100','1100','1100','1100'],
-															priceSheremetevo:['1000','1000','1100','1200','1200','1200','1100','1000','1100'],
-															priceVnukovo:['1100','1100','1100','1100','1100','1000','1000','1100','1100'],
-															tariffName:'Минивэн (8 мест)'
+															priceDomodedovo:['1900','1900','1900','1900','1800','1900','1900','2000','1900'],
+															priceSheremetevo:['1800','1800','1900','2000','2000','2000','1900','1800','1900'],
+															priceVnukovo:['1900','1900','1900','1900','1900','1800','1800','1900','1900'],
+															caption:'Тарифы такси Минивэн (8 мест) в аэропорт из Москвы'
+															})
+			+tariff-airport-transfer({distr:['Домодедово','Шереметьево','Внуково'],
+															priceDomodedovo:['---','2500','2100'],
+															priceSheremetevo:['2500','1500','2300'],
+															priceVnukovo:['2100','2300','---'],
+															caption:'Тариф такси Минивэн (8 мест) на трансфер аэропорт -> аэропорт'
+															})
+			+tariff-airport-station({distr:'Ж/д вокзал',
+															priceDomodedovo:2100,
+															priceSheremetevo:2100,
+															priceVnukovo:2100,
+															caption:'Тариф такси Минивэн (6 мест) на трансфер аэропорт -> вокзал'
 															})
 			+common-services
