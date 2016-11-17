@@ -1,0 +1,47 @@
+mixin tariff-airport-table(obj)
+	+b.TABLE.tariff-airport-table&attributes(attributes)
+		caption #{obj.caption}
+		tr
+			th
+			if obj.airportName == 'Внуково'
+				th Во #{obj.airportName}
+				th Из #{obj.airportName}
+			unless obj.airportName == 'Внуково'
+				th В #{obj.airportName}
+				th Из #{obj.airportName}
+		tr
+			td.district-name #{obj.distr[0]}
+			td #{obj.priceToAirport[0]}
+			td #{obj.priceFromAirport[0]}
+		tr
+			td.district-name #{obj.distr[1]}
+			td #{obj.priceToAirport[1]}
+			td #{obj.priceFromAirport[1]}
+		tr
+			td.district-name #{obj.distr[2]}
+			td #{obj.priceToAirport[2]}
+			td #{obj.priceFromAirport[2]}
+		tr
+			td.district-name #{obj.distr[3]}
+			td #{obj.priceToAirport[3]}
+			td #{obj.priceFromAirport[3]}
+		tr
+			td.district-name #{obj.distr[4]}
+			td #{obj.priceToAirport[4]}
+			td #{obj.priceFromAirport[4]}
+		tr
+			td.district-name #{obj.distr[5]}
+			td #{obj.priceToAirport[5]}
+			td #{obj.priceFromAirport[5]}
+		tr
+			td.district-name #{obj.distr[6]}
+			td #{obj.priceToAirport[6]}
+			td #{obj.priceFromAirport[6]}
+		tr
+			td.district-name #{obj.distr[7]}
+			td #{obj.priceToAirport[7]}
+			td #{obj.priceFromAirport[7]}
+		tr
+			td.district-name #{obj.distr[8]}
+			td #{obj.priceToAirport[8]}
+			td #{obj.priceFromAirport[8]}

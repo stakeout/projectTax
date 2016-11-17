@@ -1,0 +1,56 @@
+mixin transfer-from-airport(obj)
+	+b.TABLE.transfer-from-airport&attributes(attributes)
+		caption #{obj.caption}
+		if obj.airport == "Шереметьево"
+			tr
+				th
+				th Во Внуково
+				th В Домодедово
+				th На ж/д вокзал
+		if obj.airport == "Домодедово"
+			tr
+				th
+				th Во Внуково
+				th В Шереметьево
+				th На ж/д вокзал
+		if obj.airport == "Внуково"
+			tr
+				th
+				th В Домодедово
+				th В Шереметьево
+				th На ж/д вокзал
+		tr
+			td.district-name #{obj.tariff[0]}
+			td #{obj.price1[0]}
+			td #{obj.price2[0]}
+			td #{obj.priceStation[0]}
+		tr
+			td.district-name #{obj.tariff[1]}
+			td #{obj.price1[1]}
+			td #{obj.price2[1]}
+			td #{obj.priceStation[1]}
+		tr
+			td.district-name #{obj.tariff[2]}
+			td #{obj.price1[2]}
+			td #{obj.price2[2]}
+			td #{obj.priceStation[2]}
+		tr
+			td.district-name #{obj.tariff[3]}
+			td #{obj.price1[3]}
+			td #{obj.price2[3]}
+			td #{obj.priceStation[3]}
+		tr
+			td.district-name #{obj.tariff[4]}
+			td #{obj.price1[4]}
+			td #{obj.price2[4]}
+			td #{obj.priceStation[4]}
+		tr
+			td.district-name #{obj.tariff[5]}
+			td #{obj.price1[5]}
+			td #{obj.price2[5]}
+			td #{obj.priceStation[5]}
+		tr
+			td.district-name #{obj.tariff[6]}
+			td #{obj.price1[6]}
+			td #{obj.price2[6]}
+			td #{obj.priceStation[6]}

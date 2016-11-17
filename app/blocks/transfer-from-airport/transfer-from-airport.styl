@@ -1,0 +1,35 @@
+.transfer-from-airport
+	max-width 800px
+	width 100%
+	margin 0 auto
+	margin-bottom 50px
+	border-spacing 0
+	empty-cells hide
+	caption
+		margin-bottom 15px
+		color $c_white
+		font-family $base-font
+		font-size 24px
+		font-weight 700
+	th
+		width 25%
+		padding 10px 0
+		font-family $base-font
+		font-size 19px
+		border 1px solid
+		&:first-child
+			border-top none
+			border-left none
+	tr
+		&:nth-child(n+2)
+			width 25%
+	td
+		padding 10px
+		border 1px solid
+		font-weight 700
+		&.district-name
+			font-family $base-font
+			font-size 18px
+			text-transform uppercase
+		&:nth-child(n+2)
+			text-align center
