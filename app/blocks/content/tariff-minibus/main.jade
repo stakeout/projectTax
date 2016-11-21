@@ -1,3 +1,4 @@
+
 include /blocks/common-services/common-services
 include /blocks/tariff-info/tariff-info
 include /blocks/tariff-district-table/tariff-district-table
@@ -29,6 +30,9 @@ mixin main()
 															priceVnukovo:4800,
 															caption:'Тариф такси Микроавтобус на трансфер аэропорт -> вокзал'
 															})
+			+e.IMG.image._microbus(src='assets/images/tariffs/microbus/microbus_400x300.jpg' width='400' height='300' title='такси микроавтобус' alt='такси микроавтобус')
+			+e.IMG.image._microbus(src='assets/images/tariffs/microbus/microbus-white_400x220.jpg' width='400' height='220' title='такси микроавтобус' alt='такси микроавтобус')
+			+e.IMG.image._microbus(src='assets/images/tariffs/microbus/microbus-red_400x267.jpg' width='400' height='267' title='такси микроавтобус' alt='такси микроавтобус')
 			+b.about-tariff
 				+e.P.text Транспортная служба города Москвы сегодня развивается семимильными шагами. Не отстают от нее и службы такси. В таком разнообразии потенциальному пассажиру очень сложно найти для себя и своего кошелька удобные и выгодные условия поездки, особенно тем, кто передвигается группами. Наша компания предлагает своим клиентам, кроме стандартных машин такси услугу 
 					strong «такси микроавтобус». 
