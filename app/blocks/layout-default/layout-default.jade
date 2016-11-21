@@ -8,4 +8,12 @@ html(lang='ru')
 	include ../head/head
 	+page
 		block content
+		script(src='https://msk1.sedi.ru/api.js', type='text/javascript')
+		script(type='text/javascript').
+			//<![CDATA[
+			window.SeDi({
+			//BootstrapTheme: "superhero", // http://bootswatch.com/
+			key: "B7B8FEEE-213A-4679-80A0-57A687DCF58D"
+			});
+			//]]>
 		+scripts(['app.min.js'])

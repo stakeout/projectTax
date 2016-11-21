@@ -1,27 +1,2 @@
 mixin order-form()
-	+b.FORM.order-form(action='' method='')&attributes(attributes)
-		+e.INPUT.form-input._from(name='from' id='from' placeholder='Откуда' type ='text')
-		+e.INPUT.form-input._where(name='from' id='from' placeholder='Куда' type ='text')
-		+e.add-address Добавить адрес
-		+e.SELECT.form-select._nearest-time(name='nearest-time')
-			option(value='nearest') Ближайшее время
-			option(value='today') Сегодня
-			option(value='tomorrow') Завтра
-			option(value='another') Другое время
-		+e.SELECT.form-select._tarrifs(name='tarrifs')
-			option(value='1') Эконом
-			option(value='2') Комфорт
-			option(value='3') Бизнес
-			option(value='4') Универсал
-			option(value='5') Минивен
-			option(value='6') Микроавтобус
-		+e.SELECT.form-select._services(name='services')
-			option(value='1') 1
-			option(value='2') 2
-			option(value='3') 3
-			option(value='4') 4
-			option(value='5') 5
-			option(value='6') 6
-		+e.INPUT.form-input._name(name='from' id='from' placeholder='Ваше имя' type ='text')
-		+e.INPUT.form-input._phone(name='from' id='from' placeholder='Телефон' type ='tel')
-		+e.BUTTON.submit(type='submit') Заказать такси
+	+b.order-form(id="sedi-orderform2" data-city="Москва" data-map="false") Форма заказа
