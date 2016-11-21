@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/stations/savelovskiy/main
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Some title';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer
