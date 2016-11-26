@@ -1,10 +1,8 @@
 include /blocks/callback-form/callback-form
-include /blocks/unlike-service/unlike-service
 include /blocks/socials/socials
 mixin footer()
 	+b.FOOTER.page-footer&attributes(attributes)
 		+e.inner.container
 			+callback-form
-			+unlike-service
-			//- +socials
-			+e.A.site-map.link(href='#') Карта сайта
+			+socials
+			+e.A.site-map(href='#') Карта сайта
