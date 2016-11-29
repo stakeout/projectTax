@@ -1,7 +1,8 @@
 .tariffs
-	margin-bottom 80px
+	padding-top 10px
+	margin-bottom 10px
 	&__title
-		margin-bottom 80px
+		margin-bottom 70px
 		text-align center
 	&__inner
 		display -webkit-flex
@@ -28,7 +29,7 @@
 	.price
 		font-family $h-font
 		color $c_yellow
-		font-size 46px
+		font-size 40px
 		font-weight 400
 	span
 		display inline-block
@@ -48,3 +49,6 @@
 		line-height 50px
 		background-color $c_black
 		border-radius 5px
+		&:hover
+			background-color lighten($c_black, 60%)
+			color $c_black

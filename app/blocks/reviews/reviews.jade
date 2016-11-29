@@ -1,14 +1,17 @@
 mixin reviews()
 	+b.SECTION.reviews&attributes(attributes)
 		+e.H2.title.heading.heading._h2.taxi-icon Отзывы
-		+e.UL.list
-			+e.LI.item
-				+e.P.review-text Такси приехало быстро, приятный водитель, все устроило
-				+e.P.review-name Александр
-			+e.LI.item
-				+e.P.review-text Такси приехало быстро, приятный водитель, все устроило
-				+e.P.review-name Александр
-			+e.LI.item
-				+e.P.review-text Такси приехало быстро, приятный водитель, все устроило
-				+e.P.review-name Александр
+		+e.slider.owl-carousel
+			+e.slider-item
+				+e.P.review-text Отличный сервис!!! Замечательное общение с клиентами.
+				+e.SPAN.review-name Игорь
+			+e.slider-item
+				+e.P.review-text Быстро, недорого. Рекомендую друзьям и знакомым.
+				+e.SPAN.review-name Олег
+			+e.slider-item
+				+e.P.review-text Спасибо за быструю обработку заказа, внимательность и оперативную работу диспетчера Аллы!
+				+e.SPAN.review-name Семен Валерьевич
+			+e.slider-item
+				+e.P.review-text Очень доброжелательны! Отвечают быстро и вежливо!
+				+e.SPAN.review-name Галина
 		+e.A.add-review.link(href='') Оставьте свой отзыв

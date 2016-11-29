@@ -1,5 +1,5 @@
 .page-header
-	margin-bottom 80px
+	margin-bottom 60px
 	min-height 630px
 	background url(../images/header-bg.png) no-repeat 50% bottom
 	&__top-row
@@ -48,5 +48,15 @@
 		background-color $c_black
 		text-align center
 	&__car-container
+		position relative
 		min-height 245px
 		background url(../images/car-bg.png) no-repeat right bottom
+		animation: car 5s ease-in
+		animation-fill-mode: both;
+		animation-iteration-count: 1
+		animation-delay 10s
+@keyframes car
+	0%
+		right -120%
+	100%
+		right -10%
