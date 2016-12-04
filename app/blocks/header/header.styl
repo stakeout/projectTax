@@ -1,7 +1,15 @@
-.page-header
+.pages-header
 	margin-bottom 60px
-	min-height 630px
+	min-height 620px
+	padding-bottom 0
+	border-bottom 0
 	background url(../images/header-bg.png) no-repeat 50% bottom
+	&_train
+		background url(../images/train-bg.png) no-repeat 60% 90%,
+							url(../images/header-bg.png) no-repeat 50% bottom
+	&_plane
+		background url(../images/plane-bg.png) no-repeat 70% 35%,
+							url(../images/header-bg.png) no-repeat 50% bottom
 	&__top-row
 		position fixed
 		top 0
@@ -14,7 +22,7 @@
 			display -ms-flex
 			display flex
 	&__bottom-row
-		padding-top 110px
+		padding-top 80px
 		.container
 			display -webkit-flex
 			display -ms-flex
@@ -31,32 +39,53 @@
 		max-width 750px
 		width 100%
 	&__title
-		width 420px
-		margin 0 auto
-		margin-bottom 40px
-		text-align center
-	&__call-back
-		display block
-		width 240px
-		min-height 50px
-		margin 0 auto
-		margin-bottom 80px
-		color $c_yellow
-		font-family $base-font
-		font-size 19px
-		line-height 50px
-		background-color $c_black
-		text-align center
-	&__car-container
 		position relative
-		min-height 245px
-		background url(../images/car-bg.png) no-repeat right bottom
-		animation: car 5s ease-in
+		width 500px
+		margin-bottom 200px
+		padding-left 20px
+		padding-right 90px
+		padding-top 35px
+		&:after
+			position absolute
+			content '495'
+			right 0
+			font-family $h-font
+			font-size 42px
+			color $c_white
+			font-weight 700
+	// &__call-back
+	// 	display block
+	// 	width 240px
+	// 	min-height 50px
+	// 	margin 0 auto
+	// 	margin-bottom 80px
+	// 	color $c_yellow
+	// 	font-family $base-font
+	// 	font-size 19px
+	// 	line-height 50px
+	// 	background-color $c_black
+	// 	text-align center
+	&__car-container
+		min-height 235px
+		background url(../images/car-bg.png) no-repeat 670px bottom
+		background-size 587px 230px
+		animation: car 4s ease-in
 		animation-fill-mode: both;
 		animation-iteration-count: 1
-		animation-delay 10s
+		animation-delay 8s
+		&_train
+			background url(../images/car-bg_train.png) no-repeat 670px bottom
+			animation: car-train 4s ease-in
+			animation-fill-mode: both;
+			animation-iteration-count: 1
+			animation-delay 8s
 @keyframes car
 	0%
-		right -120%
+		background-position 670px bottom
 	100%
-		right -10%
+		background-position 0% 0%
+@keyframes car-train
+	0%
+		background-position 670px bottom
+	100%
+		background-position 70% bottom

@@ -1,8 +1,8 @@
 include /blocks/top-menu/top-menu
 include /blocks/logo/logo
 include /blocks/order-form/order-form
-mixin header()
-	+b.HEADER.page-header&attributes(attributes)
+mixin header(modifier)
+	+b.HEADER(class='pages-header_' + modifier)&attributes(attributes)
 		+e.top-row
 			.container
 				+logo
@@ -13,6 +13,7 @@ mixin header()
 				+order-form
 				+e.SECTION.content
 					+e.H1.title.heading.heading_h1 такси москва
-					+e.A.call-back.link(href='') Обратный звонок
-					+e.car-wrapper
+					if modifier === 'train'
+						+e.car-container._train
+					else
 						+e.car-container

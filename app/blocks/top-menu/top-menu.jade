@@ -3,7 +3,7 @@ mixin top-menu(items)
 	+b.NAV.top-menu&attributes(attributes)
 		+e.UL.list
 			+e.LI.item
-				+e.A.link.link(href='tariffs.html') Тарифы
+				+e.A.link.link.down-arrow(href='tariffs.html') Тарифы
 				+sub-menu({'Эконом':'tariff-econom.html',
 									'Комфорт':'tariff-comfort.html',
 									'Универсал':'tariff-universal.html',
@@ -13,13 +13,13 @@ mixin top-menu(items)
 									'Микроавтобус':'tariff-minibus.html'
 									})
 			+e.LI.item
-				+e.A.link.link(href='airport.html') Такси в аэропорт
+				+e.A.link.link.down-arrow(href='airport.html') Такси в аэропорт
 				+sub-menu({'Внуково':'airport-vnukovo.html',
 									'Домодедово':'airport-domodedovo.html',
 									'Шереметьево':'airport-sheremetevo.html'
 									})
 			+e.LI.item
-				+e.A.link.link(href='stations.html') Такси на вокзал
+				+e.A.link.link.down-arrow(href='stations.html') Такси на вокзал
 				+sub-menu({'Белорусский':'belorusskiy.html',
 									'Казанский':'kazanskiy.html',
 									'Киевский ':'kievskiy.html',
@@ -31,7 +31,7 @@ mixin top-menu(items)
 									'Ярославский':'yaroslavskiy.html'
 									})
 			+e.LI.item
-				+e.A.link.link(href='') Такси по округам
+				+e.A.link.link(href='#') Такси по округам
 				//- +sub-menu({'САО':'ekonom.html',
 				//- 					'СВАО':'komfort.html',
 				//- 					'ВАО ':'universal.html',
@@ -43,9 +43,9 @@ mixin top-menu(items)
 				//- 					'ЦАО':'address.html'
 				//- 					})
 			+e.LI.item
-				+e.A.link.link(href='') Такси межгород
+				+e.A.link.link(href='#') Такси межгород
 			+e.LI.item
-				+e.A.link.link(href='') Услуги
+				+e.A.link.link(href='#') Услуги
 				//- +sub-menu({'Женское такси':'address.html',
 				//- 					'Перевозка велосипеда':'address.html',
 				//- 					'Экскурсия на такси':'address.html',

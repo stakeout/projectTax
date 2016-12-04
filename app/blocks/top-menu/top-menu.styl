@@ -1,4 +1,5 @@
 .top-menu
+
 	&__list
 		display -webkit-flex
 		display -ms-flex
@@ -22,3 +23,16 @@
 		line-height 80px
 		&:hover
 			color $c_yellow
+.down-arrow
+	position relative
+	&:after
+		position absolute
+		content ''
+		top calc(50% - 2px)
+		right -12px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 8px 4px 0 4px
+		border-color: $c_black transparent transparent transparent
+		opacity .5
