@@ -5,7 +5,7 @@
 	border-bottom 0
 	background url(../images/header-bg.png) no-repeat 50% bottom
 	&_train
-		background url(../images/train-bg.png) no-repeat 60% 90%,
+		background url(../images/train-bg.png) no-repeat 65% 90%,
 							url(../images/header-bg.png) no-repeat 50% bottom
 	&_plane
 		background url(../images/plane-bg.png) no-repeat 70% 35%,
@@ -27,10 +27,18 @@
 			display -webkit-flex
 			display -ms-flex
 			display flex
+			#sedi-orderform2-order
+				background-color #6666cc
+				color $c_white
+				border none
+				&:hover
+					background-color lighten(#6666cc, 5)
 	&__phone-number
 		position relative
 		left 30px
 		width 270px
+	&__phone-link
+		color $c_black
 		font-family $h-font
 		font-size 24px
 		font-weight 400

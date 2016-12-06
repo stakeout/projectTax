@@ -1,4 +1,8 @@
-mixin logo()
+mixin logo(page)
 	+b.logo&attributes(attributes)
-		+e.A.link.link
-			img(src='assets/images/logo.png' alt='logo')
+		+e.A.link.link(href='index.html')
+			img(src='assets/images/logo.svg' width='80' height='80' title='такси Москва 495' alt='такси москва 495')
+		if page === 'index'
+			+e.A.link.link
+			img(src='assets/images/logo.svg' width='80' height='80' title='такси Москва 495' alt='такси москва 495')
+		

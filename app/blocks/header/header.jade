@@ -7,7 +7,8 @@ mixin header(modifier)
 			.container
 				+logo
 				+top-menu
-				+e.phone-number +7 (495) 133-62-26
+				+e.phone-number 
+					+e.A.phone-link(href='tel:+74951336226') +7 (495) 133-62-26
 		+e.bottom-row
 			.container
 				+order-form
