@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/battery-smoke/main
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Прикурить автомобиль в Москве';
+	- var pageDescription = 'Прикурить аккумулятор автомобиля в Москве. Прикурить авто за 15 минут всего за 1000 рублей';
+	- var pageKeywords = 'прикурить автомобиль, прикурить авто, зарядить аккумулятор, прикурить аккумулятор, прикурить машину, сел аккумулятор, услуга прикурить автомобиль';
+block content
+	+header('service')
+	+main
+	+footer

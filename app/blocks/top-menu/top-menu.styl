@@ -4,16 +4,18 @@
 		display -ms-flex
 		display flex
 		align-content center
+		margin-bottom 0
 	&__sub-list
 		display none
 	&__item
 		position relative
+		margin-right 20px
 		&:hover .sub-menu
 			left -20px
 			opacity 1
 			transition opacity .4s ease
-		&:not(:last-child)
-			margin-right 20px
+		&:last-child
+			margin-right 0
 	&__link
 		display block
 		color $c_black
