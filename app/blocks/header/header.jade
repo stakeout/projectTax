@@ -13,8 +13,9 @@ mixin header(modifier)
 			.container
 				+order-form
 				+e.SECTION.content
-					if modifier === 'train'
-						+e.car-container._train
+					//- if modifier === 'train'
+					//- 	+e.H1.title.heading.heading_h1 такси москва
+					//- 	+e.car-container._train
 					if modifier === 'service'
 						+e.P.title.heading.heading_h1 такси москва
 						+e.car-container
