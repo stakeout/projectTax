@@ -13,12 +13,15 @@ mixin header(modifier)
 			.container
 				+order-form
 				+e.SECTION.content
-					//- if modifier === 'train'
-					//- 	+e.H1.title.heading.heading_h1 такси москва
-					//- 	+e.car-container._train
-					if modifier === 'service'
+					if modifier === 'common'
 						+e.P.title.heading.heading_h1 такси москва
 						+e.car-container
-					else
+					if modifier === 'index'
 						+e.H1.title.heading.heading_h1 такси москва
 						+e.car-container
+					if modifier === 'train'
+						+e.P.title.heading.heading_h1 такси москва
+						+e.car-container._train
+					if modifier === 'plane'
+						+e.P.title.heading.heading_h1 такси москва
+						+e.car-container._plane

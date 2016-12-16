@@ -1,6 +1,7 @@
 mixin tariff-district-table(obj)
 	+b.TABLE.tariff-district-table&attributes(attributes)
-		caption #{obj.caption}
+		caption
+			h2 #{obj.caption}
 		tr
 			th
 			th Домодедово
