@@ -25,6 +25,8 @@
 		font-weight 400
 		&:hover
 			color $c_yellow
+		@media (max-width: 1024px)
+			font-size 16px
 .down-arrow
 	position relative
 	&:after
@@ -38,3 +40,7 @@
 		border-width: 8px 4px 0 4px
 		border-color: $c_black transparent transparent transparent
 		opacity .5
+		@media (max-width: 1024px)
+			right -10px
+			top calc(50% - 1px)
+			border-width: 6px 3px 0 3px
