@@ -1,17 +1,20 @@
 mixin reviews()
 	+b.SECTION.reviews&attributes(attributes)
 		+e.H2.title.heading.heading._h2.taxi-icon Отзывы
-		+e.slider.owl-carousel
-			+e.slider-item
+		+e.UL.slider.js-slick
+			+e.LI.slider-item
 				+e.P.review-text Отличный сервис!!! Замечательное общение с клиентами.
 				+e.SPAN.review-name Игорь
-			+e.slider-item
+			+e.LI.slider-item
 				+e.P.review-text Быстро, недорого. Рекомендую друзьям и знакомым.
 				+e.SPAN.review-name Олег
-			+e.slider-item
+			+e.LI.slider-item
 				+e.P.review-text Спасибо за быструю обработку заказа, внимательность и оперативную работу диспетчера Аллы!
 				+e.SPAN.review-name Семен Валерьевич
-			+e.slider-item
+			+e.LI.slider-item
 				+e.P.review-text Очень доброжелательны! Отвечают быстро и вежливо!
 				+e.SPAN.review-name Галина
+			+e.LI.slider-item
+				+e.P.review-text Водитель забирал из аэропорта Домодедово (прилетела с ребенком). Помог погрузить багаж, пристегнуть ребенка. Благодарю
+				+e.SPAN.review-name Надежда
 		+e.A.add-review.link(href='') Оставьте свой отзыв

@@ -6,18 +6,33 @@
 	background url(../images/header-bg.png) no-repeat 50% bottom
 	@media (max-width: 1024px)
 		margin-bottom 10px
+	@media (max-width: 768px)
+		min-height 420px
+		background url(../images/header-bg.png) no-repeat 50% bottom
+		background-size 760px 400px
+		background-position 0 50px
 	&_train
 		background url(../images/train-bg.png) no-repeat 65% 90%,
 							url(../images/header-bg.png) no-repeat 50% bottom
 		@media (max-width: 1024px)
 			background url(../images/train-bg.png) no-repeat 90% 90%,
 							url(../images/header-bg.png) no-repeat 50% bottom
+		@media (max-width: 768px)
+			background url(../images/train-bg.png) no-repeat,
+			url(../images/header-bg.png) no-repeat 50% bottom
+			background-size 400px 200px, 760px 400px
+			background-position 110% 85%, 0 50px
 	&_plane
 		background url(../images/plane-bg.png) no-repeat 70% 35%,
 							url(../images/header-bg.png) no-repeat 50% bottom
 		@media (max-width: 1024px)
 			background url(../images/plane-bg.png) no-repeat 90% 35%,
 			url(../images/header-bg.png) no-repeat 50% bottom
+		@media (max-width: 768px)
+			background url(../images/plane-bg.png) no-repeat,
+			url(../images/header-bg.png) no-repeat 50% bottom
+			background-size 200px 80px, 760px 400px
+			background-position 90% 150px, 0 50px
 			
 	&__top-row
 		position fixed
@@ -30,6 +45,12 @@
 			display -webkit-flex
 			display -ms-flex
 			display flex
+			@media (max-width: 768px)
+				max-width 768px
+				flex-wrap wrap
+				margin 0
+				padding 0 10px
+				background-color $c_white
 	&__bottom-row
 		padding-top 80px
 		@media (max-width: 1024px)
@@ -38,10 +59,17 @@
 			display -webkit-flex
 			display -ms-flex
 			display flex
+			@media (max-width: 768px)
+				max-width 768px
+				padding 0 10px
+				padding-top 10px
+				margin 0 auto
 			#sedi-orderform2-order
 				background-color #6666cc
 				color $c_white
 				border none
+				@media (max-width: 768px)
+					margin-left 0
 				&:hover
 					background-color lighten(#6666cc, 5)
 		p
@@ -52,6 +80,11 @@
 		position relative
 		left 30px
 		width 270px
+		@media (max-width: 768px)
+			width 100%
+			left 0
+			order 0
+			padding-top 10px
 	&__phone-link
 		color $c_black
 		font-family $h-font
@@ -60,9 +93,17 @@
 		line-height 80px
 		@media (max-width: 1024px)
 			font-size 22px
+		@media (max-width: 768px)
+			display block
+			font-size 20px
+			line-height 24px
+			text-align center
 	&__content
 		max-width 750px
 		width 100%
+		@media (max-width: 768px)
+			max-width: initial
+			width 50%
 	&__title
 		position relative
 		width 500px
@@ -70,6 +111,12 @@
 		padding-left 20px
 		padding-right 90px
 		padding-top 35px
+		@media (max-width: 768px)
+			width 400px
+			margin-bottom 130px
+			padding-right 0
+			padding-left 0
+			font-size 34px
 		// &:after
 		// 	position absolute
 		// 	content '495'
@@ -100,6 +147,10 @@
 		animation-delay 6s
 		@media (max-width: 1024px)
 			background-size 457px 180px
+		@media (max-width: 768px)
+			min-height 150px 
+			background-size 330px 135px
+
 		&_train
 			background url(../images/car-bg_train.png) no-repeat 670px bottom
 			animation: car-train 4s ease-in

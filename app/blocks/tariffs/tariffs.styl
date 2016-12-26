@@ -22,15 +22,23 @@
 		background-color $c_white
 		text-align center
 		border-radius 5px
-		&:nth-child(3n)
-			margin-right 0
+		@media (max-width: 768px)
+			width 220px
+			min-height 220px
+			margin-right 20px
+			margin-bottom 20px
 	h3
 		margin-bottom 30px
+		@media (max-width: 768px)
+			font-size 23px
+			margin-bottom 15px
 	.price
 		font-family $h-font
 		color $c_yellow
 		font-size 40px
 		font-weight 400
+		@media (max-width: 768px)
+			font-size 30px
 	span
 		display inline-block
 		vertical-align top
@@ -38,6 +46,8 @@
 		color #ffc000
 		font-family $base-font
 		font-size 30px
+		@media (max-width: 768px)
+			font-size 20px
 	&__link
 		display inline-block
 		vertical-align top
@@ -49,6 +59,11 @@
 		line-height 50px
 		background-color $c_black
 		border-radius 5px
+		@media (max-width: 768px)
+			width 180px
+			font-size 16px
+			min-height 40px
+			line-height 40px
 		&:hover
 			background-color lighten($c_black, 60%)
 			color $c_black
