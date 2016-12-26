@@ -6,7 +6,7 @@
 	margin-bottom 40px
 	@media (max-width: 1024px)
 		margin-bottom 0
-	&__item
+	li.common-services__item
 		position relative
 		max-width 150px
 		padding-top 60px
@@ -15,8 +15,11 @@
 		font-size 19px
 		text-align center
 		list-style none!important
+		@media (max-width: 1024px)
+			margin-left 0
 		@media (max-width: 768px)
 			max-width 120px
+			margin-left 0
 			padding-right 7px
 			padding-left 7px
 			font-size 14px

@@ -8,11 +8,15 @@ h1,h2,h3,p
 		font-size 42px
 		font-weight 400
 		text-transform uppercase
+		text-align center
+		@media (max-width: 768px)
+			font-size 36px
 	&_h2
 		color $c_white
 		font-family $h-font
 		font-size 41px
 		font-weight 400
+		text-align center
 		@media (max-width: 768px)
 			font-size 36px
 	&_h3
@@ -35,7 +39,10 @@ h1,h2,h3,p
 	margin: 0 auto
 	padding-left 10px
 	padding-right 10px
-
+	@media (max-width: 1024px)
+		max-width: 1024px
+		padding 0 10px
+		
 .overlay
 	display: none
 	position: absolute
@@ -91,3 +98,5 @@ h1,h2,h3,p
 		width 178px
 		height 24px
 		background url(../images/taxi-icon.png) no-repeat
+		@media (max-width: 1024px)
+			bottom -25px
