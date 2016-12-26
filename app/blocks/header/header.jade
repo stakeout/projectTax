@@ -4,13 +4,13 @@ include /blocks/order-form/order-form
 mixin header(modifier)
 	+b.HEADER(class='pages-header_' + modifier)&attributes(attributes)
 		+e.top-row
-			.container
+			.center
 				+logo
 				+top-menu
 				+e.phone-number 
 					+e.A.phone-link(href='tel:+74951336226') +7 (495) 133-62-26
 		+e.bottom-row
-			.container
+			.center
 				+order-form
 				+e.content
 					if modifier === 'common'

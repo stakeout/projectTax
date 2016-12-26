@@ -19,8 +19,10 @@
 		background url(../images/train-bg.png) no-repeat 65% 90%,
 							url(../images/header-bg.png) no-repeat 50% bottom
 		@media (max-width: 1024px)
-			background url(../images/train-bg.png) no-repeat 90% 90%,
+			background url(../images/train-bg.png) no-repeat,
 							url(../images/header-bg.png) no-repeat 50% bottom
+			background-size 450px 250px, 1024px 420px
+			background-position 80% 90%, 0 20px
 		@media (max-width: 768px)
 			background url(../images/train-bg.png) no-repeat,
 			url(../images/header-bg.png) no-repeat 50% bottom
@@ -32,6 +34,8 @@
 		@media (max-width: 1024px)
 			background url(../images/plane-bg.png) no-repeat 90% 35%,
 			url(../images/header-bg.png) no-repeat 50% bottom
+			background-size 200px 80px, 1024px 420px
+			background-position 90% 150px, 0 0
 		@media (max-width: 768px)
 			background url(../images/plane-bg.png) no-repeat,
 			url(../images/header-bg.png) no-repeat 50% bottom
@@ -45,7 +49,7 @@
 		right 0
 		background-color $c_white
 		z-index 1505
-		.container
+		.center
 			display -webkit-flex
 			display -ms-flex
 			display flex
@@ -61,7 +65,7 @@
 		padding-top 80px
 		@media (max-width: 1024px)
 			padding-top 60px
-		.container
+		.center
 			display -webkit-flex
 			display -ms-flex
 			display flex
@@ -155,14 +159,14 @@
 		animation-iteration-count: 1
 		animation-delay 6s
 		@media (max-width: 1024px)
-			min-height 200px
+			min-height 180px
 			background-size 457px 180px
 		@media (max-width: 768px)
 			min-height 150px 
-			background-size 30px 135px
+			background-size 300px 135px
 		&_train
 			background url(../images/car-bg_train.png) no-repeat
-			background-size 310px 140px
+			background-size 310px 130px
 			animation: car-train 4s ease-in
 			animation-fill-mode: both;
 			animation-iteration-count: 1

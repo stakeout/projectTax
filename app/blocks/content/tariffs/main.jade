@@ -4,7 +4,7 @@ include /blocks/tariff-district-table/tariff-district-table
 include /blocks/tariff-airport-transfer/tariff-airport-transfer
 mixin main()
 	+b.MAIN.page-content
-		+e.inner.container
+		+e.inner.center
 			+tariffs('Тарифы')
 			+tariff-district-table({distr:['сао','свао','вао','ювао','юао','юзао','зао','сзао','цао'],
 															priceDomodedovo:['1100','1100','1100','1100','1000','1100','1100','1100','1100'],
