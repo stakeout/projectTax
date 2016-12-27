@@ -1,6 +1,7 @@
 mixin tariff-airport-table(obj)
 	+b.TABLE.tariff-airport-table&attributes(attributes)
-		caption #{obj.caption}
+		caption 
+			h2 #{obj.caption}
 		tr
 			th
 			if obj.airportName == 'Внуково'

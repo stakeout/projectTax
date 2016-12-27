@@ -15,6 +15,8 @@
 		background url(../images/header-bg.png) no-repeat 50% bottom
 		background-size 760px 400px
 		background-position 0 50px
+	@media (max-width: 380px)
+		background none
 	&_train
 		background url(../images/train-bg.png) no-repeat 65% 90%,
 							url(../images/header-bg.png) no-repeat 50% bottom
@@ -41,7 +43,6 @@
 			url(../images/header-bg.png) no-repeat 50% bottom
 			background-size 200px 80px, 760px 400px
 			background-position 90% 150px, 0 50px
-			
 	&__top-row
 		position fixed
 		top 0
@@ -61,6 +62,10 @@
 				margin 0
 				padding 0 10px
 				background-color $c_white
+			@media (max-width: 380px)
+				max-width 380px
+				flex-direction column
+				border-bottom 1px solid rgba(0,0,0,.2)
 	&__bottom-row
 		padding-top 80px
 		@media (max-width: 1024px)
@@ -74,6 +79,8 @@
 				padding 0 10px
 				padding-top 10px
 				margin 0 auto
+			@media (max-width: 380px)
+				max-width 380px
 			#sedi-orderform2-order
 				background-color #6666cc
 				color $c_white
@@ -97,6 +104,9 @@
 			left 0
 			order 0
 			padding-top 10px
+		@media (max-width: 380px)
+			display block
+			text-align center
 	&__phone-link
 		color $c_black
 		font-family $h-font
@@ -110,11 +120,15 @@
 			font-size 20px
 			line-height 24px
 			text-align center
+		@media (max-width: 380px)
+			font-size 16px
 	&__content
 		max-width 750px
 		width 100%
 		@media (max-width: 768px)
 			max-width: 330px
+		@media (max-width: 380px)
+			display none
 	&__title
 		position relative
 		width 500px
@@ -164,6 +178,8 @@
 		@media (max-width: 768px)
 			min-height 150px 
 			background-size 300px 135px
+		@media (max-width: 380px)
+			display none
 		&_train
 			background url(../images/car-bg_train.png) no-repeat
 			background-size 310px 130px

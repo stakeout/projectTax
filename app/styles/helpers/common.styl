@@ -42,7 +42,12 @@ h1,h2,h3,p
 	@media (max-width: 1024px)
 		max-width: 1024px
 		padding 0 10px
-		
+	@media (max-width: 768px)
+		max-width: 768px
+		padding 0 10px
+	@media (max-width: 380px)
+		max-width: 380px
+		padding 0 10px
 .overlay
 	display: none
 	position: absolute
@@ -60,6 +65,8 @@ h1,h2,h3,p
 .image
 	max-width: 100%
 	height: auto
+	@media (max-width: 320px)
+		max-width 300px
 .img-center
 	display block
 	margin 0 auto
@@ -84,7 +91,8 @@ h1,h2,h3,p
 	vertical-align top
 	border: none
 	outline: none
-
+.show
+	display block
 .hidden
 	display none
 

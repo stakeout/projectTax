@@ -1,6 +1,8 @@
 include /blocks/sub-menu/sub-menu
 mixin top-menu(items)
-	+b.NAV.top-menu&attributes(attributes)
+	+b.NAV.top-menu._closed._no-js&attributes(attributes)
+		+e.BUTTON.toggle(type='button') открыть меню
+			//- +icon('menu-open', 30,30)
 		+e.UL.list
 			+e.LI.item
 				+e.A.link.link.down-arrow(href='tariffs.html') Тарифы

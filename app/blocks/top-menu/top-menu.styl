@@ -1,23 +1,75 @@
 .top-menu
 	@media (max-width: 768px)
 		order 2
+	&__toggle
+		display none
+	&_closed .top-menu__toggle
+		@media (max-width: 380px)
+			display block
+			font-size 0
+			border none
+			outline none
+		&:before 
+			content: "";
+			position: absolute;
+			top 55px
+			right: 35px;
+			z-index: 13;
+			width: 30px;
+			height: 30px;
+			transition: opacity 0.3s ease;
+			background: url("../images/menu-open.svg") no-repeat 50% 50%;
+			background-size: 30px 30px;
+	&_opened .top-menu__toggle
+		@media (max-width: 380px)
+			display block
+			font-size 0
+			border none
+			outline none
+		&:before 
+			content: "";
+			position: absolute;
+			top 55px
+			right: 35px;
+			z-index: 13;
+			width: 30px;
+			height: 30px;
+			transition: opacity 0.3s ease;
+			background: url("../images/menu-close.svg") no-repeat 50% 50%;
+			background-size: 30px 30px;
+	
 	&__list
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		align-content center
 		margin-bottom 0
+		@media (max-width: 380px)
+			display none
+			width 100%
+			border-top 1px solid $c_yellow
 	&__sub-list
 		display none
 	&__item
 		position relative
 		margin-right 20px
+		@media (max-width: 380px)
+			margin-right 0
+			border-bottom 1px solid $c_yellow
+		@media (max-width: 380px)
+			&:hover .sub-menu
+				position relative
+				display block
+				left 0
+				opacity 1
+				animation subNav .5s ease-in-out
 		&:hover .sub-menu
 			left -20px
 			opacity 1
 			transition opacity .4s ease
 		&:last-child
 			margin-right 0
+			border-bottom none
 	&__link
 		display block
 		color $c_black
@@ -27,10 +79,19 @@
 		font-weight 400
 		&:hover
 			color $c_yellow
+			@media (max-width: 380px)
+				color $c_black
+				text-decoration none
 		@media (max-width: 1024px)
 			font-size 18px
 		@media (max-width: 768px)
 			font-size 18px
+		@media (max-width: 380px)
+			padding-top 15px
+			padding-bottom 15px
+			padding-left 50px
+			font-size 20px
+			line-height 16px
 .down-arrow
 	position relative
 	&:after
@@ -48,3 +109,10 @@
 			right -10px
 			top calc(50% - 1px)
 			border-width: 6px 3px 0 3px
+		@media (max-width: 380px)
+			right 20%
+@keyframes subNav
+	0%
+		opacity 0
+	100%
+		opacity 1

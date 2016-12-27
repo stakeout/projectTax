@@ -1,6 +1,7 @@
 mixin transfer-from-airport(obj)
 	+b.TABLE.transfer-from-airport&attributes(attributes)
-		caption #{obj.caption}
+		caption 
+			h2 #{obj.caption}
 		if obj.airport == "Шереметьево"
 			tr
 				th
