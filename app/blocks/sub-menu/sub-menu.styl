@@ -1,22 +1,19 @@
 .sub-menu
+	display none
 	position absolute
-	left -9999px
 	top 100%
 	width 185px
 	padding-top 5px
 	padding-bottom 5px
 	padding-left 25px
 	background-color $c_white
-	opacity 0
 	@media (max-width: 1024px)
 		padding-top 2px
 		padding-bottom 2px
 	@media (max-width: 380px)
+		position relative
 		width 100%
 		left 0
-		display none
-		padding 0
-		opacity 0
 		// transition visibility 2s, opacity 2s ease
 	&__list
 		@media (max-width: 380px)
@@ -24,6 +21,11 @@
 	&__item
 		@media (max-width: 380px)
 			width 100%
+			border-bottom 1px solid rgba(0,0,0,.1)
+			&:first-child
+				border-top 1px solid rgba(0,0,0,.1)
+			&:last-child
+				border-bottom none
 	&__link
 		display block
 		font-family $base-font2
@@ -34,7 +36,7 @@
 			font-size 16px
 		@media (max-width: 380px)
 			font-size 16px
-			padding-left 100px
-			// border-bottom 1px solid rgba(0,0,0,.6)
+			line-height 35px
+			padding-left 60px
 		&:hover
 			color $c_yellow

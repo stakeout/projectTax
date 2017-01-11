@@ -1,0 +1,51 @@
+.tariff-region-table
+	max-width 800px
+	width 100%
+	margin 0 auto
+	margin-bottom 50px
+	border-spacing 0
+	empty-cells hide
+	caption
+		margin-bottom 15px
+		color $c_white
+		font-family $base-font
+		font-size 24px
+		font-weight 700
+		text-align center
+		@media (max-width: 380px)
+			margin-bottom 0
+		h2
+			@media (max-width: 380px)
+				font-size 18px
+	th
+		width 25%
+		padding 10px 0
+		font-family $base-font
+		font-size 19px
+		border 1px solid
+		text-align center
+		@media (max-width: 380px)
+			font-size 14px
+			padding 5px 2px
+		&:first-child
+			border-top none
+			border-left none
+	tr
+		&:nth-child(n+2)
+			width 25%
+	td
+		padding 10px
+		font-size 16px
+		font-weight 700
+		border 1px solid
+		@media (max-width: 380px)
+			padding 5px
+			font-size 14px
+		&.district-name
+			font-family $base-font
+			font-size 18px
+			text-transform uppercase
+			@media (max-width: 380px)
+				font-size 12px
+		&:nth-child(n+2)
+			text-align center

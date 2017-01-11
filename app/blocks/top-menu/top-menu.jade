@@ -4,7 +4,7 @@ mixin top-menu(items)
 		+e.BUTTON.toggle(type='button') открыть меню
 			//- +icon('menu-open', 30,30)
 		+e.UL.list
-			+e.LI.item
+			+e.LI.item.has-child
 				+e.A.link.link.down-arrow(href='tariffs.html') Тарифы
 				+sub-menu({'Эконом':'tariff-econom.html',
 									'Комфорт':'tariff-comfort.html',
@@ -14,13 +14,13 @@ mixin top-menu(items)
 									'Минивэн (8 мест)':'tariff-miniven-8.html',
 									'Микроавтобус':'tariff-minibus.html'
 									})
-			+e.LI.item
+			+e.LI.item.has-child
 				+e.A.link.link.down-arrow(href='airport.html') Такси в аэропорт
 				+sub-menu({'Внуково':'airport-vnukovo.html',
 									'Домодедово':'airport-domodedovo.html',
 									'Шереметьево':'airport-sheremetevo.html'
 									})
-			+e.LI.item
+			+e.LI.item.has-child
 				+e.A.link.link.down-arrow(href='stations.html') Такси на вокзал
 				+sub-menu({'Белорусский':'belorusskiy.html',
 									'Казанский':'kazanskiy.html',
@@ -46,6 +46,7 @@ mixin top-menu(items)
 				//- 					})
 			+e.LI.item
 				+e.A.link.link(href='#') Такси межгород
-			+e.LI.item
+			+e.LI.item.has-child
 				+e.A.link.link.down-arrow(href='#') Услуги
-				+sub-menu({'Прикурить автомобиль':'start-the-car.html'})
+				+sub-menu({'Прикурить автомобиль':'start-the-car.html',
+									'Такси в область':'region-taxi.html'})

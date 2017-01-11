@@ -1,0 +1,36 @@
+mixin tariff-region-table(obj)
+	+b.TABLE.tariff-region-table&attributes(attributes)
+		caption 
+			h2 #{obj.caption}
+		tr
+			th
+				th до 150км от МКАД
+				th более 150км от МКАД
+		tr
+			td.district-name #{obj.distr[0]}
+			td #{obj.priceToAirport[0]}
+			td #{obj.priceFromAirport[0]}
+		tr
+			td.district-name #{obj.distr[1]}
+			td #{obj.priceToAirport[1]}
+			td #{obj.priceFromAirport[1]}
+		tr
+			td.district-name #{obj.distr[2]}
+			td #{obj.priceToAirport[2]}
+			td #{obj.priceFromAirport[2]}
+		tr
+			td.district-name #{obj.distr[3]}
+			td #{obj.priceToAirport[3]}
+			td #{obj.priceFromAirport[3]}
+		tr
+			td.district-name #{obj.distr[4]}
+			td #{obj.priceToAirport[4]}
+			td #{obj.priceFromAirport[4]}
+		tr
+			td.district-name #{obj.distr[5]}
+			td #{obj.priceToAirport[5]}
+			td #{obj.priceFromAirport[5]}
+		tr
+			td.district-name #{obj.distr[6]}
+			td #{obj.priceToAirport[6]}
+			td #{obj.priceFromAirport[6]}
