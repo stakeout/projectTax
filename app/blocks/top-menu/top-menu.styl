@@ -19,7 +19,19 @@ CORE STYLES
 .navigation-portrait{
 	height: 48px;
 }
-
+@media (min-width: 320px) and (max-width: 414px) {
+	.navigation-portrait{
+		width 100%;
+		order: 3;
+	}
+}
+@media (min-width: 414px) and (max-width: 768px) {
+	.navigation-portrait{
+		order: 3;
+		margin-left auto;	
+	}
+	
+}
 /* Fixed navigation */
 .navigation-fixed{
 	position: fixed;
@@ -107,14 +119,6 @@ CORE STYLES
 .navigation-portrait .nav-toggle{
 	display: block;
 }
-@media (min-width: 320px) and (max-width: 414px) {
-	.navigation-portrait{
-		width 100%;
-	}
-	.navigation-portrait{
-		order 3;
-	}
-}
 
 /*=== NAVIGATION MENUS WRAPPER ===========*/
 /*=== (OFFCANVAS PANEL ON MOBILE) ========*/
@@ -164,10 +168,24 @@ CORE STYLES
 
 /*=== MENUS (FIRST LEVEL) ===============*/
 .nav-menu{
+	display -webkit-flex
+	display -ms-flex
+	display flex
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	line-height: normal;
+}
+@media (min-width: 320px) and (max-width: 414px){
+	.nav-menu{
+		flex-direction: column;
+	}
+}
+@media (min-width: 414px) and (max-width: 768px){
+	.nav-menu{
+		flex-wrap: wrap;
+		outline: 1px solid;
+	}
 }
 .navigation-portrait .nav-menu{
 	width: 100%;

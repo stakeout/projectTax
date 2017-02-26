@@ -3,7 +3,7 @@
 
 			var defaults = {
 				responsive: true,
-				mobileBreakpoint: 767,
+				mobileBreakpoint: 768,
 				showDuration: 300,
 				hideDuration: 300,
 				showDelayDuration: 0,
