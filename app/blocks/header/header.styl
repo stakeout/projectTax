@@ -59,17 +59,6 @@
 			display -ms-flex
 			display flex
 			align-items center
-			// @media (max-width: 1024px)
-			// 	max-width 1024px
-			// @media (max-width: 768px)
-			// 	max-width 768px
-			// 	flex-wrap wrap
-			// 	margin 0
-			// 	padding 0 10px
-			// 	background-color $c_white
-			// @media (max-width: 380px)
-			// 	max-width 380px
-			// 	border-bottom 1px solid rgba(0,0,0,.2)
 	&__bottom-row
 		padding-top 80px
 		@media (max-width: 1024px)
@@ -83,8 +72,8 @@
 				padding 0 10px
 				padding-top 10px
 				margin 0 auto
-			@media (max-width: 380px)
-				max-width 380px
+			@media (max-width: 414px)
+				max-width 414px
 			#sedi-orderform2-order
 				background-color #6666cc
 				color $c_white
@@ -108,11 +97,11 @@
 			left 0
 			order 0
 			padding-top 10px
-		@media (max-width: 380px)
+		@media (max-width: 414px)
 			display block
 			text-align center
 			padding-top 0
-			order 1
+			order 2
 			width 100%
 	&__phone-link
 		color $c_black
@@ -127,14 +116,15 @@
 			font-size 20px
 			line-height 24px
 			text-align center
-		@media (max-width: 380px)
+		@media (max-width: 414px)
 			font-size 16px
+			text-decoration none
 	&__content
 		max-width 750px
 		width 100%
 		@media (max-width: 768px)
 			max-width: 330px
-		@media (max-width: 380px)
+		@media (max-width: 414px)
 			display none
 	&__title
 		position relative
@@ -185,7 +175,7 @@
 		@media (max-width: 768px)
 			min-height 150px 
 			background-size 300px 135px
-		@media (max-width: 380px)
+		@media (max-width: 414px)
 			display none
 		&_train
 			background url(../images/car-bg_train.png) no-repeat

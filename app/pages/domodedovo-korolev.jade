@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/domodedovo/korolev
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Королев Домодедово самое дешевое';
+	- var pageDescription = 'Самое дешевое такси Королев Домодедово по фиксированному тарифу';
+	- var pageKeywords = 'такси Королев, такси Королев дешево, самое дешевое такси, дешевое такси, такси домодедово, такси фиксированный тариф, такси эконом Королев, такси аэропорт';
+block content
+	+header('common')
+	+main
+	+footer
