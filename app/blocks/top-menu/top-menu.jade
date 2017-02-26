@@ -1,52 +1,110 @@
 include /blocks/sub-menu/sub-menu
 mixin top-menu(items)
-	+b.NAV.top-menu._closed._no-js&attributes(attributes)
-		+e.BUTTON.toggle(type='button') открыть меню
-			//- +icon('menu-open', 30,30)
-		+e.UL.list
-			+e.LI.item.has-child
-				+e.A.link.link.down-arrow(href='tariffs.html') Тарифы
-				+sub-menu({'Эконом':'tariff-econom.html',
-									'Комфорт':'tariff-comfort.html',
-									'Универсал':'tariff-universal.html',
-									'Бизнес':'tariff-biznes.html',
-									'Минивэн (6 мест)':'tariff-miniven-6.html',
-									'Минивэн (8 мест)':'tariff-miniven-8.html',
-									'Микроавтобус':'tariff-minibus.html'
-									})
-			+e.LI.item.has-child
-				+e.A.link.link.down-arrow(href='airport.html') Такси в аэропорт
-				+sub-menu({'Внуково':'airport-vnukovo.html',
-									'Домодедово':'airport-domodedovo.html',
-									'Шереметьево':'airport-sheremetevo.html'
-									})
-			+e.LI.item.has-child
-				+e.A.link.link.down-arrow(href='stations.html') Такси на вокзал
-				+sub-menu({'Белорусский':'belorusskiy.html',
-									'Казанский':'kazanskiy.html',
-									'Киевский ':'kievskiy.html',
-									'Курский':'kurskiy.html',
-									'Ленинградский':'leningradskiy.html',
-									'Павелецкий':'paveleckiy.html',
-									'Рижский':'rizhskiy.html',
-									'Савеловский':'savelovskiy.html',
-									'Ярославский':'yaroslavskiy.html'
-									})
-			+e.LI.item
-				+e.A.link.link(href='#') Такси по округам
-				//- +sub-menu({'САО':'ekonom.html',
-				//- 					'СВАО':'komfort.html',
-				//- 					'ВАО ':'universal.html',
-				//- 					'ЮВАО':'biznes.html',
-				//- 					'ЮАО':'miniven.html',
-				//- 					'ЮЗАО':'micro.html',
-				//- 					'ЗАО':'address.html',
-				//- 					'СЗАО':'address.html',
-				//- 					'ЦАО':'address.html'
-				//- 					})
-			+e.LI.item
-				+e.A.link.link(href='#') Такси межгород
-			+e.LI.item.has-child
-				+e.A.link.link.down-arrow(href='#') Услуги
-				+sub-menu({'Прикурить автомобиль':'start-the-car.html',
-									'Такси в область':'region-taxi.html'})
+	+b.NAV.top-menu#navigation.navigation
+		.nav-header
+			//- a.nav-brand(href='#') Navigation
+			.nav-toggle
+		.nav-menus-wrapper
+			+e.UL.list.nav-menu
+				+e.LI.item
+					a(href='tariffs.html') Тарифы
+					+sub-menu({'Эконом':'tariff-econom.html',
+										'Комфорт':'tariff-comfort.html',
+										'Универсал':'tariff-universal.html',
+										'Бизнес':'tariff-biznes.html',
+										'Минивэн (6 мест)':'tariff-miniven-6.html',
+										'Минивэн (8 мест)':'tariff-miniven-8.html',
+										'Микроавтобус':'tariff-minibus.html'
+										})
+				+e.LI.item
+					a(href='airport.html') Такси в аэропорт
+					ul.nav-dropdown
+						li
+							a(href='airport-vnukovo.html') Внуково
+						li
+							a(href='airport-domodedovo.html') Домодедово
+							ul.nav-dropdown
+								li
+									a(href='domodedovo-odincovo.html') Одинцово - Домодедово
+								li
+									a(href='domodedovo-mytishchi.html') Мытищи - Домодедово
+								li
+									a(href='domodedovo-podolsk.html') Подольск - Домодедово
+								li
+									a(href='domodedovo-hymki.html') Химки - Домодедово
+						li
+							a(href='airport-sheremetevo.html') Шереметьево
+				+e.LI.item
+					a(href='stations.html') Такси на вокзал
+					+sub-menu({'Белорусский':'belorusskiy.html',
+										'Казанский':'kazanskiy.html',
+										'Киевский ':'kievskiy.html',
+										'Курский':'kurskiy.html',
+										'Ленинградский':'leningradskiy.html',
+										'Павелецкий':'paveleckiy.html',
+										'Рижский':'rizhskiy.html',
+										'Савеловский':'savelovskiy.html',
+										'Ярославский':'yaroslavskiy.html'
+										})
+				+e.LI.item
+					a(href='#') Такси по округам
+				+e.LI.item
+					a(href='#') Такси межгород
+				+e.LI.item
+					a(href='#') Услуги
+					+sub-menu({'Прикурить автомобиль':'start-the-car.html',
+										'Такси в область':'region-taxi.html'})
+	//- +b.NAV.top-menu._closed._no-js&attributes(attributes)
+	//- 	+e.BUTTON.toggle(type='button') открыть меню
+	//- 		//- +icon('menu-open', 30,30)
+	//- 	+e.UL.list
+	//- 		+e.LI.item.has-child
+	//- 			+e.A.link.link.down-arrow(href='tariffs.html') Тарифы
+	//- 			+sub-menu({'Эконом':'tariff-econom.html',
+	//- 								'Комфорт':'tariff-comfort.html',
+	//- 								'Универсал':'tariff-universal.html',
+	//- 								'Бизнес':'tariff-biznes.html',
+	//- 								'Минивэн (6 мест)':'tariff-miniven-6.html',
+	//- 								'Минивэн (8 мест)':'tariff-miniven-8.html',
+	//- 								'Микроавтобус':'tariff-minibus.html'
+	//- 								})
+	//- 		+e.LI.item.has-child
+	//- 			+e.A.link.link.down-arrow(href='airport.html') Такси в аэропорт
+	//- 			+sub-menu({'Внуково':'airport-vnukovo.html',
+	//- 								'Домодедово':'airport-domodedovo.html',
+	//- 								'Шереметьево':'airport-sheremetevo.html',
+	//- 								'Домодедово-Одинцово':'domodedovo-odincovo.html',
+	//- 								'Домодедово-Мытищи':'domodedovo-mytishchi.html',
+	//- 								'Домодедово-Подольск':'domodedovo-podolsk.html',
+	//- 								'Домодедово-Химки':'domodedovo-hymki.html'
+	//- 								})
+	//- 		+e.LI.item.has-child
+	//- 			+e.A.link.link.down-arrow(href='stations.html') Такси на вокзал
+	//- 			+sub-menu({'Белорусский':'belorusskiy.html',
+	//- 								'Казанский':'kazanskiy.html',
+	//- 								'Киевский ':'kievskiy.html',
+	//- 								'Курский':'kurskiy.html',
+	//- 								'Ленинградский':'leningradskiy.html',
+	//- 								'Павелецкий':'paveleckiy.html',
+	//- 								'Рижский':'rizhskiy.html',
+	//- 								'Савеловский':'savelovskiy.html',
+	//- 								'Ярославский':'yaroslavskiy.html'
+	//- 								})
+	//- 		+e.LI.item
+	//- 			+e.A.link.link(href='#') Такси по округам
+	//- 			//- +sub-menu({'САО':'ekonom.html',
+	//- 			//- 					'СВАО':'komfort.html',
+	//- 			//- 					'ВАО ':'universal.html',
+	//- 			//- 					'ЮВАО':'biznes.html',
+	//- 			//- 					'ЮАО':'miniven.html',
+	//- 			//- 					'ЮЗАО':'micro.html',
+	//- 			//- 					'ЗАО':'address.html',
+	//- 			//- 					'СЗАО':'address.html',
+	//- 			//- 					'ЦАО':'address.html'
+	//- 			//- 					})
+	//- 		+e.LI.item
+	//- 			+e.A.link.link(href='#') Такси межгород
+	//- 		+e.LI.item.has-child
+	//- 			+e.A.link.link.down-arrow(href='#') Услуги
+	//- 			+sub-menu({'Прикурить автомобиль':'start-the-car.html',
+	//- 								'Такси в область':'region-taxi.html'})

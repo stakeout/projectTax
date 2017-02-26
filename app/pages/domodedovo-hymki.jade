@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/domodedovo/hymki
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Химки Домодедово дешево';
+	- var pageDescription = 'Дешевое такси Химки Домодедово по номеру телефона +7 495 133 62 26';
+	- var pageKeywords = 'такси в аэропорт домодедово, такси химки домодедово, такси в аэропорт, такси химки, такси домодедово, такси москва, заказ такси, дешевое такси химки';
+block content
+	+header('common')
+	+main
+	+footer

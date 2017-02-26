@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/domodedovo/odincovo
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Одинцово Домодедово дешево';
+	- var pageDescription = 'Дешевое такси Одинцово Домодедово по номеру телефона +7 495 133 62 26';
+	- var pageKeywords = 'такси в аэропорт домодедово, такси одинцово домодедово, такси в аэропорт, такси одинцово, такси домодедово, такси москва, заказ такси, дешевое такси одинцово, дешевое такси аэропорт';
+block content
+	+header('common')
+	+main
+	+footer

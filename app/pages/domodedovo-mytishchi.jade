@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/domodedovo/mytishchi
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Мытищи Домодедово дешево';
+	- var pageDescription = 'Дешевое такси Мытищи Домодедово по номеру телефона +7 495 133 62 26';
+	- var pageKeywords = 'такси в аэропорт домодедово, такси мытищи домодедово, такси в аэропорт, такси мытищи, такси домодедово, такси москва, заказ такси, дегевое такси мытищи, дешевое такси домодедово';
+block content
+	+header('common')
+	+main
+	+footer
