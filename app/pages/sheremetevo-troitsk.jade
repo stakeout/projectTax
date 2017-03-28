@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/sheremetevo/troitsk
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Шереметьево Троицк официальное';
+	- var pageDescription = 'Такси Шереметьево Троицк самое дешевое';
+	- var pageKeywords = 'такси Шереметьево Троицк, такси Троицк, такси аэропорт, такси аэропорт Шереметьево, дешевое такси Троицк';
+block content
+	+header('common')
+	+main
+	+footer

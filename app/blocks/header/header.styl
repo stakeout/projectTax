@@ -74,6 +74,7 @@
 				margin 0 auto
 			@media (max-width: 414px)
 				max-width 414px
+				padding-top 60px
 			#sedi-orderform2-order
 				background-color #6666cc
 				color $c_white
@@ -89,23 +90,20 @@
 		h1
 			margin-top 20px
 	&__phone-number
-		position relative
-		left 30px
+		margin-left auto
 		width 270px
 		@media (min-width: 768px) and (max-width: 1024px)
-			left inherit
 			order 2
 			margin 0 auto
 		@media (min-width: 414px) and (max-width: 768px)
 			width 400px
-			left: inherit;
 			order: 2;
 			padding-left 100px
 		@media (min-width: 320px) and (max-width: 414px)
 			// display block
 			// text-align center
+			margin-left 0
 			order 2
-			left inherit
 			padding-top 0
 			padding-left 0
 	&__phone-link
@@ -129,6 +127,8 @@
 	&__content
 		max-width 750px
 		width 100%
+		@media (max-width: 1024px)
+			max-width 590px
 		@media (max-width: 768px)
 			max-width: 330px
 		@media (max-width: 414px)
@@ -148,14 +148,14 @@
 			padding-right 0
 			padding-left 0
 			font-size 34px
-		&:after
-			position absolute
-			content '495'
-			right 0
-			font-family $h-font
-			font-size 42px
-			color $c_white
-			font-weight 700
+		// &:after
+		// 	position absolute
+		// 	content '495'
+		// 	right 0
+		// 	font-family $h-font
+		// 	font-size 42px
+		// 	color $c_white
+		// 	font-weight 700
 	// &__call-back
 	// 	display block
 	// 	width 240px

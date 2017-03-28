@@ -1,5 +1,7 @@
 .order-form
+	width 400px
 	margin-left 100px
+	margin-right 50px
 	padding-left 15px
 	padding-right 15px
 	padding-top 60px
@@ -7,9 +9,31 @@
 	background rgba(255,255,255,.8)
 	border-radius 10px
 	@media (max-width: 1024px)
-		margin-left 30px
+		margin-right 0
+		margin-left 0
 	@media (max-width: 768px)
 		margin-left 0
 		padding-left 0
 		padding-bottom 0
-	
+	@media (min-width: 320px) and (max-width: 414px) {
+		width 100%
+	}
+#sedi-notify-navbar
+	display none
+	@media (max-width: 414px)
+		display none
+@media (max-width: 768px)
+	.navbar-right
+			display none
+#sedi-orderform2-cashless-container,
+#sedi-orderform2-cashless-ways,
+#sedi-orderform2-help
+	display none
+// #sedi-orderform2 #sedi-orderform2-section-tariff,
+// #sedi-orderform2 
+// 	width 100%
+#sedi-orderform2 .sedi-orderform2-row .sedi-orderform2-row-part-third
+	width 49%
+	margin-right 3px
+#sedi-orderform2 .sedi-orderform2-row .sedi-orderform2-row-part-third:last-child
+	width 100%

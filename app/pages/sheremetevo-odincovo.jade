@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/sheremetevo/odincovo
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Шереметьево Одинцово фиксированое';
+	- var pageDescription = 'Такси Шереметьево Одинцово по фиксированному тарифу';
+	- var pageKeywords = 'такси Шереметьево Одинцово, такси Одинцово, такси аэропорт, такси аэропорт Шереметьево, дешевое такси Одинцово';
+block content
+	+header('common')
+	+main
+	+footer

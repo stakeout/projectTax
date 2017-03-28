@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/sheremetevo/shcherbinka
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Шереметьево Щербинка фиксированное';
+	- var pageDescription = 'Такси Шереметьево Щербинка по номеру телефона +7 495 133 62 26';
+	- var pageKeywords = 'такси Шереметьево Щербинка, такси Щербинка, такси аэропорт, такси аэропорт Шереметьево, дешевое такси Щербинка';
+block content
+	+header('common')
+	+main
+	+footer

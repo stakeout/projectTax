@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/airport-region/sheremetevo/lubertsi
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Шереметьево Люберцы самое дешевое';
+	- var pageDescription = 'Такси Шереметьево Люберцы самое дешевое';
+	- var pageKeywords = 'такси Шереметьево Люберцы, такси Люберцы, такси аэропорт, такси аэропорт Шереметьево, дешевое такси Люберцы';
+block content
+	+header('common')
+	+main
+	+footer
