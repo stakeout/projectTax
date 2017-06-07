@@ -1,48 +1,45 @@
 .pages-header
-	margin-bottom 60px
-	min-height 620px
-	padding-bottom 0
-	border-bottom 0
-	background url(../images/header-bg.png) no-repeat 50% bottom
+	margin-bottom 20px
+	// min-height 500px
+	background url(../images/header-bg.png) no-repeat center top
 	@media (max-width: 1024px)
 		min-height 420px
 		margin-bottom 10px
-		background url(../images/header-bg.png) no-repeat 50% bottom
-		background-size 1024px 420px
+		background url(../images/header-bg.png) no-repeat center top
+		background-size 1024px 520px
 		background-position 0 20px
 	@media (max-width: 768px)
-		min-height 420px
-		background url(../images/header-bg.png) no-repeat 50% bottom
+		background url(../images/header-bg.png) no-repeat center top
 		background-size 760px 400px
 		background-position 0 50px
 	@media (max-width: 414px)
 		background none
 	&_train
 		background url(../images/train-bg.png) no-repeat 65% 90%,
-							url(../images/header-bg.png) no-repeat 50% bottom
+							url(../images/header-bg.png) no-repeat center top
 		@media (max-width: 1024px)
 			background url(../images/train-bg.png) no-repeat,
-							url(../images/header-bg.png) no-repeat 50% bottom
+							url(../images/header-bg.png) no-repeat center top
 			background-size 450px 250px, 1024px 420px
 			background-position 80% 90%, 0 20px
 		@media (max-width: 768px)
 			background url(../images/train-bg.png) no-repeat,
-			url(../images/header-bg.png) no-repeat 50% bottom
+			url(../images/header-bg.png) no-repeat center top
 			background-size 400px 200px, 760px 400px
 			background-position 110% 85%, 0 50px
 		@media (max-width: 768px)
 			background none
 	&_plane
 		background url(../images/plane-bg.png) no-repeat 70% 35%,
-							url(../images/header-bg.png) no-repeat 50% bottom
+							url(../images/header-bg.png) no-repeat center top
 		@media (max-width: 1024px)
 			background url(../images/plane-bg.png) no-repeat 90% 35%,
-			url(../images/header-bg.png) no-repeat 50% bottom
+			url(../images/header-bg.png) no-repeat center top
 			background-size 200px 80px, 1024px 420px
 			background-position 90% 150px, 0 0
 		@media (max-width: 768px)
 			background url(../images/plane-bg.png) no-repeat,
-			url(../images/header-bg.png) no-repeat 50% bottom
+			url(../images/header-bg.png) no-repeat center top
 			background-size 200px 80px, 760px 400px
 			background-position 90% 150px, 0 50px
 		@media (max-width: 768px)
@@ -62,29 +59,26 @@
 	&__bottom-row
 		padding-top 80px
 		@media (max-width: 1024px)
-			padding-top 60px
+			padding-top 85px
 		.center
 			display -webkit-flex
 			display -ms-flex
 			display flex
-			@media (max-width: 768px)
-				max-width 768px
-				padding 0 10px
-				padding-top 10px
-				margin 0 auto
-			@media (max-width: 414px)
-				max-width 414px
+			// @media (max-width: 768px)
+				
+			@media (max-width: 425px)
+				max-width 425px
 				padding-top 60px
-			#sedi-orderform2-order
-				background-color #6666cc
-				color $c_white
-				border none
-				@media (max-width: 1024px)
-					margin-left 0
-				@media (max-width: 768px)
-					margin-left 0
-				&:hover
-					background-color lighten(#6666cc, 5)
+			// #sedi-orderform2-order
+			// 	background-color #6666cc
+			// 	color $c_white
+			// 	border none
+			// 	@media (max-width: 1024px)
+			// 		margin-left 0
+			// 	@media (max-width: 768px)
+			// 		margin-left 0
+			// 	&:hover
+			// 		background-color lighten(#6666cc, 5)
 		p
 			margin-top 10px
 		// h1
@@ -95,9 +89,9 @@
 		@media (min-width: 768px) and (max-width: 1024px)
 			order 2
 			margin 0 auto
-		@media (min-width: 414px) and (max-width: 768px)
+		@media (min-width: 425px) and (max-width: 768px)
 			order: 2;
-			padding-left 100px
+			margin-left 0
 		@media (min-width: 320px) and (max-width: 414px)
 			// display block
 			// text-align center
@@ -131,12 +125,14 @@
 		padding-left 20px
 		@media (max-width: 1050px)
 			max-width 500px
-		@media (max-width: 950px)
-			min-width 450px
 		@media (max-width: 768px)
-			max-width: 330px
-		@media (max-width: 414px)
 			display none
+		// @media (max-width: 950px)
+		// 	min-width 450px
+		// @media (max-width: 768px)
+		// 	max-width: 330px
+		// @media (max-width: 414px)
+		// 	display none
 	&__title
 		position relative
 		width 500px
@@ -170,14 +166,14 @@
 	// 	background-color $c_black
 	// 	text-align center
 	&__car-container
-		margin-top auto
+		margin-top 300px
 		min-height 235px
 		background url(../images/car-bg.png) no-repeat 670px bottom
 		background-size 587px 230px
 		animation: car 4s ease-in
 		animation-fill-mode: both;
 		animation-iteration-count: 1
-		animation-delay 6s
+		animation-delay 1s
 		@media (max-width: 1050px)
 			min-height 180px
 			background-size 457px 180px

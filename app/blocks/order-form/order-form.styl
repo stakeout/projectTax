@@ -1,110 +1,72 @@
 .order-form
-	margin-right 30px
-	padding-top 40px
-	background rgba(255,255,255,.8)
-	border-radius 10px
-	@media (max-width: 1024px)
-		margin-right 0
-	@media (max-width: 768px)
-		margin-left 0
-		padding-left 0
-		padding-bottom 0
-div#sedi-orderform2-fields
-	border-radius 20px
-	box-shadow 0 10px 9px 1px rgba(0, 0, 0, 0.15)
-	border none
-#sedi-notify-navbar
-	display none
-	@media (max-width: 425px)
-		display none
-	@media (max-width: 768px)
-		.navbar-right
-			display none
-div#sedi-orderform2-fields
-	z-index 999
-// #sedi-orderform2-cashless-container,
-#sedi-orderform2-cashless-ways,
-#sedi-orderform2-help
-	display none
-// #sedi-orderform2 #sedi-orderform2-section-tariff,
-// #sedi-orderform2 
-// 	width 100%
-// div#sedi-orderform2 .sedi-orderform2-row-part-half
-// 	margin-right 0
-div#sedi-orderform2 .sedi-orderform2-row-part-third
-	width 49%
-	margin-right 0
-div#sedi-orderform2-sections .sedi-orderform2-section .sedi-orderform2-section-title
-	border-radius 20px
-	padding 0.8em
-div#sedi-orderform2 .sedi-orderform2-section.sedi-orderform2-section-opened .sedi-orderform2-section-content
-	top 57%
-div#sedi-orderform2 .sedi-orderform2-row-part-third:first-child
-	margin-right 7px
-div#sedi-orderform2 INPUT[type='text'],
-div#sedi-orderform2 TEXTAREA
-	border-radius 20px
-	padding 0.8em
-div#sedi-orderform2 TEXTAREA
-	padding-top 1em
-	min-height 40px
-#sedi-orderform2 .sedi-orderform2-row .sedi-orderform2-row-part-third:last-child
+	padding-top 50px
+	// padding-bottom 15px
+	animation: formAnimate 2s ease-in
+	animation-fill-mode: both;
+	animation-iteration-count: 1
+	animation-delay 1.5s
 	width 100%
-div#sedi-orderform2-order
-	width 240px
-	height auto
-	margin 0 auto
-	padding-left 0
-	font-size 14px
-	line-height 46px
-	font-weight 700
-	border-radius 25px
-	background none
-	border 2px solid transparent
-	transition all 0.4s ease
-div#sedi-orderform2 INPUT[type='checkbox']
+	@media (max-width: 1024px)
+		width 50%
+	@media (max-width: 768px)
+		width 100%
+		padding-top 50px
+	@media (max-width: 425px)
+		padding-top 50px
+div.sedi .sedi-sediorderform3-content
+	height 640px
+	@media (max-width: 1024px)
+		height 580px
+div#sedi-orderform3-cashless-ways
 	display none
-div#sedi-orderform2 INPUT[type='checkbox']:checked + label:after
-	display block
-	
-div#sedi-orderform2 label[for=sedi-orderform2-cashless]
-	position relative
-	padding-left 30px
-	cursor pointer
-	&:before,
-	&:after
-		position absolute
-		content ''
-		left 0
-	&:before
-		width 16px
-		height 16px
-		border 1px solid #bbb
-		border-radius 2px
-	&:after
+div#sedi-orderform3-fields
+	z-index 999
+	margin 0
+	border-radius 10px
+	@media (max-width: 768px)
+		margin 0 auto
+.sedi div.sedi-panel-body
+	padding 10px
+.sedi button.sedi-btn-primary
+	background-color $c_form-btn
+	border-color transparent
+	border-radius 20px
+button#sedi-orderform3-order i#sedi-orderform3-order-icon:before
+	display none
+button#sedi-orderform3-order
+	border 2px solid transparent
+	transition background-color .3s ease, color .3s ease, border .3s ease
+button#sedi-orderform3-order:hover
+	background-color $c_white
+	border 2px solid $c_form-btn
+	color $c_form-btn
+div#sedi-orderform3-msg
+	padding 5px
+	margin-bottom 5px
+@keyframes formAnimate
+	0% 
 		display none
-		left 8px
-		top -6px
-		width 8px
-		height 18px
-		border-top none
-		border-left none
-		border-right 2px solid
-		border-bottom 2px solid
-		transform rotate(45deg)
-// div#sedi-orderform2 .sedi-orderform2-withvalue-airplane
-// 	background-repeat no-repeat
-// 	background-position 2px center
-// 	background-image: url(%=static=%minified-svg/icon_change.svg)
-// 	background-size 16px 16px
-// 	// background-repeat no-repeat
-// 	// background-size 30px 30px
-// div#sedi-orderform2 .sedi-orderform2-withvalue-changeuser
-// 	background-image: url(%=static=%minified-svg/name.svg)
-// 	background-size 16px 16px
-// 	background-position 2px center
-// 	opacity .7
-
-div#sedi-orderform2-customer-phone input[type='tel']
-	border-radius: 20px;
-	padding: 0.8em;
+		opacity 0
+	1%
+		display block
+		opacity 0
+	10%
+		opacity .1
+	20%
+		opacity .2
+	30%
+		opacity .3
+	40%
+		opacity .4
+	50%
+		opacity .5
+	60%
+		opacity .6
+	70%
+		opacity .7
+	80%
+		opacity .8
+	90%
+		opacity .9
+	100%
+		opacity 1
