@@ -2,6 +2,7 @@
 app/styles/helpers/svg-size.styl
 app/styles/sprites
 dist
+backup_07-06-2017
 
 # Numerous always-ignore extensions
 *.bak
