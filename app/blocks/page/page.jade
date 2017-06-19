@@ -1,5 +1,9 @@
 include ../../data/mixins.jade
 mixin page()
 	+b('body').page&attributes(attributes)
+		// Google Tag Manager (noscript)
+		noscript
+			iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KT22GJJ', height='0', width='0', style='display:none;visibility:hidden')
+		// End Google Tag Manager (noscript)
 		block
 		.overlay
