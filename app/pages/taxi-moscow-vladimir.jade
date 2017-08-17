@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/intercity/vladimir
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Москва Владимир';
+	- var pageDescription = 'Заказать такси Москва Владимир можно по телефону 7 495 133 62 26';
+	- var pageKeywords = 'такси москва владимир, такси москва владимир цена, стоимость такси москва владимир, заказать такси москва владимир';
+block content
+	+header('common')
+	+vladimir
+	+footer

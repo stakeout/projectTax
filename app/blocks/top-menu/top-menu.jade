@@ -67,10 +67,18 @@ mixin top-menu(items)
 										'Савеловский':'savelovskiy.html',
 										'Ярославский':'yaroslavskiy.html'
 										})
-				+e.LI.item
-					a(href='#') Такси по округам
+				//- +e.LI.item
+				//- 	a(href='#') Такси по округам
 				+e.LI.item
 					a(href='#') Такси межгород
+					+sub-menu({'Москва - Владимир':'taxi-moscow-vladimir.html',
+										'Москва - Иваново':'taxi-moscow-ivanovo.html',
+										'Москва - Ярославль':'taxi-moscow-yaroslavl.html'
+										'Москва - Санкт-Петербург':'такси-москва-санкт-петербург.html'
+										'Москва - Нижний Новгород':'такси-москва-нижний-новгород.html'
+										'Москва - Рязань':'такси-москва-рязань.html'
+										'Москва - Калуга':'такси-москва-калуга.html'
+										})
 				+e.LI.item
 					a(href='#') Услуги
 					+sub-menu({'Прикурить автомобиль':'start-the-car.html',

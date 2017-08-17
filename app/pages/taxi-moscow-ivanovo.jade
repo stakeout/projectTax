@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/intercity/ivanovo
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Москва Иваново';
+	- var pageDescription = 'Заказать такси Москва Иваново можно по телефону 7 495 133 62 26';
+	- var pageKeywords = 'такси москва иваново, такси москва иваново цена, стоимость такси москва иваново, заказать такси москва иваново';
+block content
+	+header('common')
+	+ivanovo
+	+footer

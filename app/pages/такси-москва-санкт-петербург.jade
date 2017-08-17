@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/intercity/piter
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Такси Москва Санкт-Петербург';
+	- var pageDescription = 'Заказать такси Москва Санкт-Петербург можно по телефону 7 495 133 62 26';
+	- var pageKeywords = 'такси москва Санкт-Петербург, такси москва Санкт-Петербург цена, стоимость такси москва Санкт-Петербург, заказать такси москва Санкт-Петербург';
+block content
+	+header('common')
+	+ivanovo
+	+footer
