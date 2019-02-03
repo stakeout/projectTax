@@ -13,5 +13,5 @@ gulp.task('images', () => {
 				progressive: true
 			})
 		]))
-		.pipe(gulp.dest('dist/assets/images'));
+		.pipe(gulp.dest('dist/assets/images'))
 });

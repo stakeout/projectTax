@@ -14,6 +14,7 @@ gulp.task('default', () => (
 		[
 			'styles:dependencies',
 			'templates',
+			'images',
 			'fonts'
 		],
 		'server',

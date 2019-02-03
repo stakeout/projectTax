@@ -15,7 +15,7 @@ const {
 gulp.task('server', () => (
 	bs.init({
 		files: ['dist/**/*'],
-		open: !!OPEN,
+		open: !OPEN,
 		reloadOnRestart: true,
 		port: PORT || 3000,
 		snippetOptions: {
@@ -31,6 +31,6 @@ gulp.task('server', () => (
 			directory: false,
 			middleware: NODE_ENV !== 'production' ? [debuga()] : []
 		},
-		tunnel: !!TUNNEL
+		tunnel: !TUNNEL
 	})
 ));
